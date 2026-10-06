@@ -1,0 +1,207 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/*Fade in is used in the /qti-ai-feedback.tsx */
+.fade-in {
+    @apply opacity-0 translate-y-2 transition-all duration-400 ease-out;
+}
+
+.fade-in-visible {
+    @apply opacity-100 translate-y-0;
+}
+
+.itemBox {
+    @apply bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 hover:shadow-lg transition font-paragraph;
+}
+
+.itemBoxText {
+    @apply text-2xl font-title font-semibold text-primary-dark dark:text-indigo-300 mb-4;
+}
+
+.buttonDesign {
+    @apply bg-primary text-text-light px-6 py-3 rounded-full text-lg font-button font-semibold hover:bg-primary-dark;
+}
+
+.titleText {
+    @apply text-primary font-title text-4xl font-extrabold drop-shadow-sm;
+}
+
+.sloganText {
+    @apply font-semibold text-primary font-title dark:text-primary-light;
+}
+
+.qtiItemText {
+    @apply text-text-dark dark:text-text-light font-item;
+}
+
+.paragraphText {
+    @apply text-text-light font-paragraph;
+}
+
+.noteText {
+    @apply text-text-muted font-ui;
+}
+
+.basicText {
+    @apply text-black dark:text-white
+}
+
+.pageBackground {
+    @apply bg-linear-to-br from-emerald-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300;
+}
+
+.background {
+    @apply bg-background-light dark:bg-background-dark transition-colors duration-300;
+}
+
+@theme {
+    /* This theme as of [30/03/26] is a generalised color pallete inspired by the previous' team implementation
+        * It is not yet fully implemented across the app, but it should be used as a reference for future additions and refactors.
+        * The color names are intentionally generic and semantic, to allow for flexibility in design and theming.
+        * The actual color values can be adjusted as needed without changing the variable names.
+
+        NOTE: The team can add their own color variables as needed,
+        but they should follow the same naming conventions and be added to the appropriate sections (e.g. primary brand, text scale, etc.)
+    */
+
+
+    /* -- Primary brand ----------------------------------------------------------------------------------*/
+    --color-primary:        var(--color-blue-500);   /* CTA buttons, active nav, links, progress fill */
+    --color-primary-dark:   var(--color-blue-700);   /* primary button hover */
+    --color-primary-light:  var(--color-blue-400);   /* Dark mode primary, icon accents */
+    --color-primary-tint:   var(--color-blue-100);   /* Button hover bg, tag backgrounds */
+    --color-primary-ghost:  var(--color-blue-50);    /* Page bg tint, input focus glow */
+
+    /* This secondary purple color is a hint to cito's light blue/pink theme where we use dark blue/purple instead. It does not have a specific use case yet. */
+    --color-secondary:      var(--color-purple-500); /* Secondary color, highlights, accents */
+    --color-secondary-tint: var(--color-purple-100); /* Secondary button hover, subtle highlights */
+
+    /* -- Text scale -------------------------------------------------------------------------------------*/
+    --color-text-primary:   var(--color-primary);   /* Titles, ghost buttons text */
+    --color-text-dark:      var(--color-gray-700);  /* Text on light background */
+    --color-text-light:     var(--color-white);  	/* Text on dark background */
+    --color-text-muted:     var(--color-gray-400);  /* Placeholders, captions, disabled, footer */
+
+    /* -- Surface / background scale ---------------------------------------------------------------------*/
+    --color-background-light:    var(--color-slate-50); /* Background colour for light mode */
+    --color-background-dark:     var(--color-gray-900); /* Background colour for dark mode */
+
+    /* -- Borders ----------------------------------------------------------------------------------------*/
+    --color-borderDefault: var(--color-blue-100);   /* Borders, dividers */
+    --color-borderInput:   var(--color-primary);    /* Admin inputs, dropdowns, search bar */
+    --color-borderFocus:   var(--color-blue-300);   /* Hover borders, Input focus rings  */
+    --color-borderActive:  var(--color-primary);    /* Selected / active borders and inputs */
+    --color-borderDisabled: var(--color-gray-300);   /* Disabled borders and inputs */
+
+    /* -- Semantic messages ------------------------------------------------------------------------------*/
+    --color-success:        var(--color-green-500); /* Success messsages, Completed states */
+    --color-success-light:  var(--color-green-200); /* Positive indicators */
+
+    --color-error:          var(--color-red-500);   /* Error messages, Failed states */
+    --color-error-light:    var(--color-red-200);   /* Error indicators */
+
+    --color-warning:        var(--color-amber-500); /* Warning messages */
+    --color-warning-border: var(--color-amber-200); /* Warning indicators */
+
+    /* -- Interactive — buy/sell ────---------------------------------------------------------------------*/
+    --color-positive:       var(--color-green-400);  /* Buy button bg */
+    --color-positive-dark:  var(--color-green-600);  /* Buy button hover */
+    --color-negative:       var(--color-red-400);    /* Sell button bg */
+    --color-negative-dark:  var(--color-red-600);    /* Sell button hover */
+
+    /* -- QTI / results ─────────────---------------------------------------------------------------------*/
+    --color-qti-correct:    var(--color-emerald-400);/* Correct answer highlight */
+    --color-qti-result-bg:  var(--color-gray-300);   /* Results tabulation bg */
+
+    /* -- Fonts --------─────────────---------------------------------------------------------------------*/
+    --font-nunito: 'DM Nunito', ui-sans-serif, system-ui, sans-serif; /* right to left, fallback fonts */
+    --font-sourceserif: 'Source Serif 4', ui-serif, Georgia, serif;
+
+    /* For ui elements */
+    --font-ui: var(--font-nunito);
+    --font-button: var(--font-ui);
+    --font-title: var(--font-ui);
+    --font-label: var(--font-ui);
+
+    /* For longer blocks of text */
+    --font-paragraph: var(--font-sourceserif);
+    --font-item: var(--font-paragraph);
+
+    --color-qti-button-report-border: var(--color-rose-400);  /* QTI report button border */
+    --color-qti-button-report-hover: var(--color-rose-50);    /* QTI report button hover bg */
+    --color-qti-button-report-text: var(--color-rose-600);    /* QTI report button text */
+
+    --color-qti-button-primary-border: var(--color-primary);
+    --color-qti-button-primary-hover: var(--color-primary-ghost);
+    --color-qti-button-primary-text: var(--color-primary-dark);
+
+    --color-qti-button-yellow-border: var(--color-yellow-400);  /* QTI yellow button border */
+    --color-qti-button-yellow-hover: var(--color-yellow-50);    /* QTI yellow button hover bg */
+    --color-qti-button-yellow-text: var(--color-yellow-600);    /* QTI yellow button text */
+
+    --color-qti-button-green-border: var(--color-primary);  /* QTI green button border */
+    --color-qti-button-green-hover: var(--color-green-50);    /* QTI green button hover bg */
+    --color-qti-button-green-text: var(--color-green-600);    /* QTI green button text */
+
+    --color-qti-button-cyan-border: var(--color-cyan-400);  /* QTI cyan button border */
+    --color-qti-button-cyan-hover: var(--color-cyan-50);    /* QTI cyan button hover bg */
+    --color-qti-button-cyan-text: var(--color-cyan-600);    /* QTI cyan button text */
+
+    --color-qti-button-red-border: var(--color-rose-400);  /* QTI report button border */
+    --color-qti-button-red-hover: var(--color-rose-50);    /* QTI report button hover bg */
+    --color-qti-button-red-text: var(--color-rose-600);    /* QTI report button text */
+
+    /* nav bars */
+    --color-nav-LD: var(--color-white);
+    --color-nav-LD--hover: var(--color-gray-200);
+    --color-nav-border-LD: var(--color-gray-200);
+    --color-nav-text-LD: var(--color-gray-700);
+    --color-nav-text-LD-hover: var(--color-primary);
+    --color-nav-text-LD--active: var(--color-primary);
+    --color-nav-active-LD: var(--color-primary-tint);
+
+    /* -- Admin dashboard --------------------------------------------------------------------------------*/
+    --color-admin-text-LD: var(--color-gray-700);  /* Admin text, including table text */
+    --color-admin-input: var(--color-gray-200);   /* Admin input background */
+    --color-admin-button-text-LD: var(--color-white);   /* Admin input text color */
+    --color-admin-border--inactive: var(--color-gray-400);   /* Admin, inactive borders, disabled inputs */
+    --color-admin-table-LD: var(--color-gray-200);   /* Admin table background */
+    --color-admin-table-LD--inactive: var(--color-red-200);   /* Admin table background for inactive items */
+    --color-admin-table-LD--hover: var(--color-gray-300);   /* Admin table row hover */
+    --color-admin-table-text-LD: var(--color-gray-800);   /* Admin table button text color */
+    --color-admin-table-border: var(--color-gray-300);   /* Admin table borders */
+
+    --color-admin-surface: var(--color-gray-100);   /* Admin page background */
+
+    --color-metric-value: var(--color-gray-700);
+}
+
+
+/* TODO: Implement dark mode color scheme here */
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* nav bars */
+        --color-nav-LD: var(--color-gray-800);
+        --color-nav-LD--hover: var(--color-gray-600);
+        --color-nav-text-LD: var(--color-gray-200);
+        --color-nav-text-LD--hover: var(--color-primary-light);
+        --color-nav-text-LD--active: var(--color-white);
+        --color-nav-border-LD: var(--color-gray-700);
+        --color-nav-active-LD: var(--color-primary);
+
+        /* -- Admin dashboard --------------------------------------------------------------------------------*/
+        --color-admin-text-LD: var(--color-gray-200);
+        --color-admin-input: var(--color-gray-700);   /* Admin input background */
+        --color-admin-border--inactive: var(--color-gray-600);   /* Admin, inactive borders, disabled inputs */
+        --color-admin-table-LD: var(--color-gray-800);   /* Admin table background */
+        --color-admin-table-LD--inactive: var(--color-red-800);   /* Admin table background for inactive items */
+        --color-admin-table-LD--hover: var(--color-gray-600);   /* Admin table row hover */
+        --color-admin-table-text-LD: var(--color-gray-200);   /* Admin table button text color */
+        --color-admin-table-border: var(--color-gray-700);   /* Admin table borders */
+
+        --color-admin-surface: var(--color-gray-900);   /* Admin page background */
+
+        --color-metric-value: var(--color-white);
+    }
+}

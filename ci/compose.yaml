@@ -1,0 +1,134 @@
+services:
+  # DEV 
+  backend-dev:
+    profiles: [dev]
+    image: backend-dev
+    build:
+      context: ../src/backend
+      dockerfile: ../../ci/backend/Dockerfile
+    env_file:
+      - .env.dev
+    environment:
+      - ASPNETCORE_URLS=http://+:8000
+      - PORT=8000
+    networks:
+      - dev
+    secrets:
+      - db-password
+    ports:
+      - "8000:8000"
+    depends_on:
+      db-dev:
+        condition: service_healthy
+
+  frontend-dev:
+    profiles: [dev]
+    image: frontend-dev
+    build:
+      context: ../src/frontend
+      dockerfile: ../../ci/frontend/Dockerfile
+      args:
+        - VITE_BASE_PATH=/app-dev/
+        - VITE_BACKEND_URL=/app-dev
+        - VITE_POSTHOG_PROJECT_TOKEN=${VITE_POSTHOG_PROJECT_TOKEN}
+        - VITE_POSTHOG_HOST=${VITE_POSTHOG_HOST}
+        - VITE_ENVIRONMENT=${VITE_ENVIRONMENT}
+    volumes:
+      - /var/www/app-dev:/output
+    networks:
+      - dev
+
+  db-dev:
+    profiles: [dev]
+    image: postgres:16
+    restart: always
+    user: postgres
+    environment:
+      - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
+      - POSTGRES_DB=testdb
+    volumes:
+      - db-dev-data:/var/lib/postgresql/data
+    networks:
+      - dev
+    ports:
+      - "127.0.0.1:8004:5432"
+    secrets:
+      - db-password
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # PROD 
+  backend-prod:
+    profiles: [prod]
+    image: backend-prod
+    build:
+      context: ../src/backend
+      dockerfile: ../../ci/backend/Dockerfile
+    env_file:
+      - .env.prod
+    environment:
+      - ASPNETCORE_URLS=http://+:8001
+      - PORT=8001
+    networks:
+      - prod
+    secrets:
+      - db-password
+    ports:
+      - "8001:8001"
+    depends_on:
+      db-prod:
+        condition: service_healthy
+
+  frontend-prod:
+    profiles: [prod]
+    image: frontend-prod
+    build:
+      context: ../src/frontend
+      dockerfile: ../../ci/frontend/Dockerfile
+      args:
+        - VITE_BASE_PATH=/
+        - VITE_BACKEND_URL=
+        - VITE_POSTHOG_PROJECT_TOKEN=${VITE_POSTHOG_PROJECT_TOKEN}
+        - VITE_POSTHOG_HOST=${VITE_POSTHOG_HOST}
+    volumes:
+      - /var/www/app:/output
+    networks:
+      - prod
+
+  db-prod:
+    profiles: [prod]
+    image: postgres:16
+    restart: always
+    user: postgres
+    environment:
+      - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
+      - POSTGRES_DB=testdb
+    volumes:
+      - db-prod-data:/var/lib/postgresql/data
+    networks:
+      - prod
+    ports:
+      - "127.0.0.1:8005:5432"
+    secrets:
+      - db-password
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+# Other stuff
+volumes:
+  db-dev-data:
+  db-prod-data:
+
+secrets:
+  db-password:
+    file: /srv/skilltrie/secrets/db-password.txt 
+
+networks:
+  dev:
+  prod:

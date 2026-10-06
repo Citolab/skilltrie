@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<qti-assessment-item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="qti_21_items_all_238788197_section_0002_item_1_schoice" title="2" adaptive="false" time-dependent="false">
+  <qti-response-declaration identifier="qti_21_items_all_238788197_section_0002_item_1_schoice_RESPONSE_1_2485801" cardinality="single" base-type="identifier">
+    <qti-correct-response>
+      <qti-value>qti_21_items_all_238788197_section_0002_item_1_schoice_4_8923590213</qti-value>
+    </qti-correct-response>
+    <qti-mapping default-value="0" lower-bound="0.0">
+      <qti-map-entry map-key="qti_21_items_all_238788197_section_0002_item_1_schoice_1_6116127029" mapped-value="0"/>
+      <qti-map-entry map-key="qti_21_items_all_238788197_section_0002_item_1_schoice_2_2759014746" mapped-value="0"/>
+      <qti-map-entry map-key="qti_21_items_all_238788197_section_0002_item_1_schoice_3_1522759257" mapped-value="0"/>
+      <qti-map-entry map-key="qti_21_items_all_238788197_section_0002_item_1_schoice_4_8923590213" mapped-value="1"/>
+    </qti-mapping>
+  </qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" normal-maximum="1" normal-minimum="0">
+    <qti-default-value>
+      <qti-value>0.0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>1</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier" view="testConstructor">
+    <qti-default-value>
+      <qti-value>empty</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration identifier="FEEDBACKMODAL" cardinality="multiple" base-type="identifier" view="testConstructor"/>
+  <qti-outcome-declaration identifier="SOLUTIONMODAL" cardinality="single" base-type="identifier" view="testConstructor"/>
+  <qti-outcome-declaration identifier="MINSCORE" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value base-type="float">0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration identifier="SCORE_RESPONSE_1" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>0.0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration identifier="MINSCORE_RESPONSE_1" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>0.0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-item-body>
+    <p>Aan welke van de volgende voorwaarden moet zijn voldaan voor een enkelvoudige regressie-analyse waarin je de score op Y voorspelt uit de score op X?</p>
+    <qti-choice-interaction response-identifier="qti_21_items_all_238788197_section_0002_item_1_schoice_RESPONSE_1_2485801" shuffle="false" max-choices="1" min-choices="1">
+      <qti-simple-choice identifier="qti_21_items_all_238788197_section_0002_item_1_schoice_1_6116127029">
+        <p>Het verband tussen X en Y moet lineair zijn.</p>
+      </qti-simple-choice>
+      <qti-simple-choice identifier="qti_21_items_all_238788197_section_0002_item_1_schoice_2_2759014746">
+        <p>
+          De variabele
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <semantics>
+              <mi>Y</mi>
+              <annotation encoding="application/x-tex">Y</annotation>
+            </semantics>
+          </math>
+          moet minimaal op intervalniveau zijn gemeten.
+        </p>
+      </qti-simple-choice>
+      <qti-simple-choice identifier="qti_21_items_all_238788197_section_0002_item_1_schoice_3_1522759257">
+        <p>
+          De residuen
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <semantics>
+              <mover>
+                <mi>Y</mi>
+                <mo accent="true">&#x302;</mo>
+              </mover>
+              <annotation encoding="application/x-tex">\hat{Y}</annotation>
+            </semantics>
+          </math>
+          behoren ongeveer normaalverdeeld te zijn.
+        </p>
+      </qti-simple-choice>
+      <qti-simple-choice identifier="qti_21_items_all_238788197_section_0002_item_1_schoice_4_8923590213">
+        <p>Er moet aan alle drie de voorwaarden zijn voldaan.</p>
+      </qti-simple-choice>
+    </qti-choice-interaction>
+  </qti-item-body>
+  <qti-response-processing>
+    <qti-set-outcome-value identifier="FEEDBACKMODAL">
+      <qti-base-value base-type="integer">0</qti-base-value>
+    </qti-set-outcome-value>
+    <qti-set-outcome-value identifier="SCORE">
+      <qti-base-value base-type="integer">0</qti-base-value>
+    </qti-set-outcome-value>
+    <qti-set-outcome-value identifier="SCORE_RESPONSE_1">
+      <qti-base-value base-type="integer">0</qti-base-value>
+    </qti-set-outcome-value>
+    <qti-set-outcome-value identifier="SCORE_RESPONSE_1">
+      <qti-sum>
+        <qti-variable identifier="SCORE_RESPONSE_1"/>
+        <qti-map-response identifier="qti_21_items_all_238788197_section_0002_item_1_schoice_RESPONSE_1_2485801"/>
+      </qti-sum>
+    </qti-set-outcome-value>
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-lt>
+          <qti-variable identifier="SCORE_RESPONSE_1"/>
+          <qti-variable identifier="MINSCORE_RESPONSE_1"/>
+        </qti-lt>
+        <qti-set-outcome-value identifier="SCORE_RESPONSE_1">
+          <qti-variable identifier="MINSCORE_RESPONSE_1"/>
+        </qti-set-outcome-value>
+      </qti-response-if>
+    </qti-response-condition>
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-is-null>
+          <qti-variable identifier="qti_21_items_all_238788197_section_0002_item_1_schoice_RESPONSE_1_2485801"/>
+        </qti-is-null>
+        <qti-set-outcome-value identifier="SCORE_RESPONSE_1">
+          <qti-sum>
+            <qti-variable identifier="SCORE_RESPONSE_1"/>
+            <qti-base-value base-type="float">0</qti-base-value>
+          </qti-sum>
+        </qti-set-outcome-value>
+      </qti-response-if>
+    </qti-response-condition>
+    <qti-set-outcome-value identifier="SCORE">
+      <qti-sum>
+        <qti-variable identifier="SCORE_RESPONSE_1"/>
+      </qti-sum>
+    </qti-set-outcome-value>
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-lt>
+          <qti-variable identifier="SCORE"/>
+          <qti-variable identifier="MINSCORE"/>
+        </qti-lt>
+        <qti-set-outcome-value identifier="SCORE">
+          <qti-variable identifier="MINSCORE"/>
+        </qti-set-outcome-value>
+      </qti-response-if>
+    </qti-response-condition>
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-lt>
+          <qti-variable identifier="SCORE"/>
+          <qti-base-value base-type="float">1</qti-base-value>
+        </qti-lt>
+        <qti-set-outcome-value identifier="FEEDBACKMODAL">
+          <qti-multiple>
+            <qti-variable identifier="FEEDBACKMODAL"/>
+            <qti-base-value base-type="identifier">Feedback176504656</qti-base-value>
+          </qti-multiple>
+        </qti-set-outcome-value>
+      </qti-response-if>
+    </qti-response-condition>
+  </qti-response-processing>
+  <qti-modal-feedback identifier="Feedback176504656" outcome-identifier="FEEDBACKMODAL" show-hide="show">
+    <qti-content-body>
+      <p>Alle drie de voorwaarden zijn voorwaarden voor een regressie-analyse.</p>
+      <br/>
+      <ul>
+        <li> Het verband tussen X en Y moet lineair zijn. <br/> Dit is incorrect </li>
+        <li> De variabele <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math> moet minimaal op intervalniveau zijn gemeten. <br/> Dit is incorrect </li>
+        <li> De residuen <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mover><mi>Y</mi><mo accent="true">&#x302;</mo></mover><annotation encoding="application/x-tex">\hat{Y}</annotation></semantics></math> behoren ongeveer normaalverdeeld te zijn. <br/> Dit is incorrect </li>
+        <li> Er moet aan alle drie de voorwaarden zijn voldaan. <br/> Juist! </li>
+      </ul>
+    </qti-content-body>
+  </qti-modal-feedback>
+</qti-assessment-item>

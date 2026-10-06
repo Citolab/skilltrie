@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<qti-assessment-item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="qti_21_items_all_238788197_section_0001_item_1_schoice" title="1" adaptive="false" time-dependent="false">
+  <qti-response-declaration identifier="qti_21_items_all_238788197_section_0001_item_1_schoice_RESPONSE_1_1495416" cardinality="single" base-type="identifier">
+    <qti-correct-response>
+      <qti-value>qti_21_items_all_238788197_section_0001_item_1_schoice_1_6240525192</qti-value>
+    </qti-correct-response>
+    <qti-mapping default-value="0" lower-bound="0.0">
+      <qti-map-entry map-key="qti_21_items_all_238788197_section_0001_item_1_schoice_1_6240525192" mapped-value="1"/>
+      <qti-map-entry map-key="qti_21_items_all_238788197_section_0001_item_1_schoice_2_3435843680" mapped-value="0"/>
+      <qti-map-entry map-key="qti_21_items_all_238788197_section_0001_item_1_schoice_3_8045303654" mapped-value="0"/>
+      <qti-map-entry map-key="qti_21_items_all_238788197_section_0001_item_1_schoice_4_1822178943" mapped-value="0"/>
+    </qti-mapping>
+  </qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" normal-maximum="1" normal-minimum="0">
+    <qti-default-value>
+      <qti-value>0.0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>1</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier" view="testConstructor">
+    <qti-default-value>
+      <qti-value>empty</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration identifier="FEEDBACKMODAL" cardinality="multiple" base-type="identifier" view="testConstructor"/>
+  <qti-outcome-declaration identifier="SOLUTIONMODAL" cardinality="single" base-type="identifier" view="testConstructor"/>
+  <qti-outcome-declaration identifier="MINSCORE" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value base-type="float">0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration identifier="SCORE_RESPONSE_1" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>0.0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-outcome-declaration identifier="MINSCORE_RESPONSE_1" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>0.0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-item-body>
+    <p>In a one-way repeated measures ANOVA, a researcher needs to test, amongst other assumptions, the sphericity assumption. Consider the following statements about the sphericity assumption and answer the subsequent question.</p>
+    <ol style="list-style-type: decimal">
+      <li>
+        <p>This assumption does not apply when the within-subjects factor only has two levels.</p>
+      </li>
+      <li>
+        <p>When this assumption is severely violated, a researcher can use a repeated-measures multivariate test (MANOVA) as an alternative to the uncorrected F-test.</p>
+      </li>
+    </ol>
+    <p>Which statement is true?</p>
+    <qti-choice-interaction response-identifier="qti_21_items_all_238788197_section_0001_item_1_schoice_RESPONSE_1_1495416" shuffle="false" max-choices="1" min-choices="1">
+      <qti-simple-choice identifier="qti_21_items_all_238788197_section_0001_item_1_schoice_1_6240525192">
+        <p>both statements are true</p>
+      </qti-simple-choice>
+      <qti-simple-choice identifier="qti_21_items_all_238788197_section_0001_item_1_schoice_2_3435843680">
+        <p>only statement 1 is true</p>
+      </qti-simple-choice>
+      <qti-simple-choice identifier="qti_21_items_all_238788197_section_0001_item_1_schoice_3_8045303654">
+        <p>only statement 2 is true</p>
+      </qti-simple-choice>
+      <qti-simple-choice identifier="qti_21_items_all_238788197_section_0001_item_1_schoice_4_1822178943">
+        <p>both statements are false</p>
+      </qti-simple-choice>
+    </qti-choice-interaction>
+  </qti-item-body>
+  <qti-response-processing>
+    <qti-set-outcome-value identifier="FEEDBACKMODAL">
+      <qti-base-value base-type="integer">0</qti-base-value>
+    </qti-set-outcome-value>
+    <qti-set-outcome-value identifier="SCORE">
+      <qti-base-value base-type="integer">0</qti-base-value>
+    </qti-set-outcome-value>
+    <qti-set-outcome-value identifier="SCORE_RESPONSE_1">
+      <qti-base-value base-type="integer">0</qti-base-value>
+    </qti-set-outcome-value>
+    <qti-set-outcome-value identifier="SCORE_RESPONSE_1">
+      <qti-sum>
+        <qti-variable identifier="SCORE_RESPONSE_1"/>
+        <qti-map-response identifier="qti_21_items_all_238788197_section_0001_item_1_schoice_RESPONSE_1_1495416"/>
+      </qti-sum>
+    </qti-set-outcome-value>
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-lt>
+          <qti-variable identifier="SCORE_RESPONSE_1"/>
+          <qti-variable identifier="MINSCORE_RESPONSE_1"/>
+        </qti-lt>
+        <qti-set-outcome-value identifier="SCORE_RESPONSE_1">
+          <qti-variable identifier="MINSCORE_RESPONSE_1"/>
+        </qti-set-outcome-value>
+      </qti-response-if>
+    </qti-response-condition>
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-is-null>
+          <qti-variable identifier="qti_21_items_all_238788197_section_0001_item_1_schoice_RESPONSE_1_1495416"/>
+        </qti-is-null>
+        <qti-set-outcome-value identifier="SCORE_RESPONSE_1">
+          <qti-sum>
+            <qti-variable identifier="SCORE_RESPONSE_1"/>
+            <qti-base-value base-type="float">0</qti-base-value>
+          </qti-sum>
+        </qti-set-outcome-value>
+      </qti-response-if>
+    </qti-response-condition>
+    <qti-set-outcome-value identifier="SCORE">
+      <qti-sum>
+        <qti-variable identifier="SCORE_RESPONSE_1"/>
+      </qti-sum>
+    </qti-set-outcome-value>
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-lt>
+          <qti-variable identifier="SCORE"/>
+          <qti-variable identifier="MINSCORE"/>
+        </qti-lt>
+        <qti-set-outcome-value identifier="SCORE">
+          <qti-variable identifier="MINSCORE"/>
+        </qti-set-outcome-value>
+      </qti-response-if>
+    </qti-response-condition>
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-lt>
+          <qti-variable identifier="SCORE"/>
+          <qti-base-value base-type="float">1</qti-base-value>
+        </qti-lt>
+        <qti-set-outcome-value identifier="FEEDBACKMODAL">
+          <qti-multiple>
+            <qti-variable identifier="FEEDBACKMODAL"/>
+            <qti-base-value base-type="identifier">Feedback446164097</qti-base-value>
+          </qti-multiple>
+        </qti-set-outcome-value>
+      </qti-response-if>
+    </qti-response-condition>
+  </qti-response-processing>
+  <qti-modal-feedback identifier="Feedback446164097" outcome-identifier="FEEDBACKMODAL" show-hide="show">
+    <qti-content-body>
+      <p>Claim 1 is true because sphericity looks at whether the variances of the difference scores differ. In the case of 2 levels, there is only one difference score, so this assumption does not apply.</p>
+      <p>Claim 2 is also true because you can perform repeated measures with a MANOVA, but the assumption of sphericity is not required in this analysis.</p>
+      <br/>
+      <ul>
+        <li> both statements are true <br/> True </li>
+        <li> only statement 1 is true <br/> False </li>
+        <li> only statement 2 is true <br/> False </li>
+        <li> both statements are false <br/> False </li>
+      </ul>
+    </qti-content-body>
+  </qti-modal-feedback>
+</qti-assessment-item>

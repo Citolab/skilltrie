@@ -1,0 +1,29 @@
+test-container, item-container {
+    --qti-gap-size: 20rem;
+    --qti-bg: rgba(128,128,128,0.1);
+
+    /* Active colors */
+    --qti-bg-active: #cbe1d0;
+    --qti-border-active: var(--color-primary-dark);
+
+    --qti-dark-border-active: var(--color-primary-light);
+
+    /* Border properties */
+    --qti-border-thickness: 2px;
+    --qti-border-style: solid;
+    --qti-border-color: var(--color-primary);
+    --qti-border-radius: calc(6 * var(--spacing));
+    --qti-drop-border-radius: calc(var(--qti-border-radius) + var(--qti-border-thickness));
+
+    /* Focus & active states */
+    --qti-focus-border-width: calc(var(--spacing) * 0.5);
+    --qti-focus-color: #b4d5bc;
+
+    /* Generic padding for all elements */
+    --qti-padding-vertical: calc(var(--spacing) * 2.5);
+    --qti-padding-horizontal: calc(var(--spacing) * 3);
+}
+
+item-container {
+    --qti-bg-active: #cbd2e1 !important;
+}

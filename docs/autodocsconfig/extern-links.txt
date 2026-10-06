@@ -1,0 +1,148 @@
+https://learn.microsoft.com/dotnet/api/
+T:System.Int32|system.int32|int
+T:System.Double|system.double|double
+T:System.String|system.string|string
+T:System.Boolean|system.boolean|bool
+T:System.Object|system.object|object
+T:System.IO.MemoryStream|system.io.memorystream|MemoryStream
+T:System.IO.File|system.io.file|File
+T:System.DateTime|system.datetime|DateTime
+M:System.IO.MemoryStream.Read|system.io.memorystream.read
+M:System.IO.MemoryStream.Write|system.io.memorystream.write
+T:System.Collections.ArrayList|system.collections.arraylist|ArrayList
+M:System.Collections.ArrayList.Add|system.collections.arraylist.add|ArrayList.Add(Object)
+M:System.Collections.ArrayList.Remove|system.collections.arraylist.remove|ArrayList.Remove(Object)
+M:System.Collections.ArrayList.Contains|system.collections.arraylist.contains|ArrayList.Contains(Object)
+T:System.Collections.Hashtable|system.collections.hashtable|Hashtable
+M:System.Collections.Hashtable.Add|system.collections.hashtable.add|Hashtable.Add(Object, Object)
+M:System.Collections.Hashtable.ContainsKey|system.collections.hashtable.containskey|Hashtable.ContainsKey(Object)
+M:System.Collections.Hashtable.Remove|system.collections.hashtable.remove|Hashtable.Remove(Object)
+T:System.Collections.Generic.List`1|system.collections.generic.list-1|List<T>
+M:System.Collections.Generic.List`1.Add|system.collections.generic.list-1.add|List<T>.Add(T)
+M:System.Collections.Generic.List`1.Remove|system.collections.generic.list-1.remove|List<T>.Remove(T)
+M:System.Collections.Generic.List`1.Contains|system.collections.generic.list-1.contains|List<T>.Contains(T)
+M:System.Collections.Generic.List`1.Find|system.collections.generic.list-1.find|List<T>.Find(Predicate<T>)
+T:System.Collections.Generic.Dictionary`2|system.collections.generic.dictionary-2|Dictionary<TKey, TValue>
+M:System.Collections.Generic.Dictionary`2.Add|system.collections.generic.dictionary-2.add|Dictionary<TKey,TValue>.Add(TKey, TValue)
+M:System.Collections.Generic.Dictionary`2.ContainsKey|system.collections.generic.dictionary-2.containskey|Dictionary<TKey,TValue>.ContainsKey(TKey)
+M:System.Collections.Generic.Dictionary`2.TryGetValue|system.collections.generic.dictionary-2.trygetvalue|Dictionary<TKey,TValue>.TryGetValue(TKey, out TValue)
+T:System.Collections.Generic.HashSet`1|system.collections.generic.hashset-1|HashSet<T>
+M:System.Collections.Generic.HashSet`1.Add|system.collections.generic.hashset-1.add|HashSet<T>.Add(T)
+M:System.Collections.Generic.HashSet`1.Remove|system.collections.generic.hashset-1.remove|HashSet<T>.Remove(T)
+M:System.Collections.Generic.HashSet`1.Contains|system.collections.generic.hashset-1.contains|HashSet<T>.Contains(T)
+T:System.Collections.Generic.Queue`1|system.collections.generic.queue-1|Queue<T>
+M:System.Collections.Generic.Queue`1.Enqueue|system.collections.generic.queue-1.enqueue|Queue<T>.Enqueue(T)
+M:System.Collections.Generic.Queue`1.Dequeue|system.collections.generic.queue-1.dequeue|Queue<T>.Dequeue()
+M:System.Collections.Generic.Queue`1.Peek|system.collections.generic.queue-1.peek|Queue<T>.Peek()
+T:System.Collections.Generic.Stack`1|system.collections.generic.stack-1|Stack<T>
+M:System.Collections.Generic.Stack`1.Push|system.collections.generic.stack-1.push|Stack<T>.Push(T)
+M:System.Collections.Generic.Stack`1.Pop|system.collections.generic.stack-1.pop|Stack<T>.Pop()
+M:System.Collections.Generic.Stack`1.Peek|system.collections.generic.stack-1.peek|Stack<T>.Peek()
+T:System.Collections.Generic.SortedList`2|system.collections.generic.sortedlist-2|SortedList<TKey, TValue>
+M:System.Collections.Generic.SortedList`2.Add|system.collections.generic.sortedlist-2.add|SortedList<TKey, TValue>.Add(TKey, TValue)
+M:System.Collections.Generic.SortedList`2.Remove|system.collections.generic.sortedlist-2.remove|SortedList<TKey, TValue>.Remove(TKey)
+T:System.Collections.IEnumerable|system.collections.ienumerable|IEnumerable
+M:System.Collections.IEnumerable.GetEnumerator|system.collections.ienumerable.getenumerator|IEnumerable.GetEnumerator()
+T:System.Collections.ICollection|system.collections.icollection|ICollection<T>
+M:System.Collections.ICollection.CopyTo|system.collections.icollection.copyto|ICollection.CopyTo(Array, Int32)
+M:System.Collections.ICollection.get_Count|system.collections.icollection.count|ICollection.Count
+T:System.Collections.IDictionary|system.collections.idictionary|IDictionary
+M:System.Collections.IDictionary.Add|system.collections.idictionary.add|IDictionary.Add(Object, Object)
+M:System.Collections.IDictionary.Remove|system.collections.idictionary.remove|IDictionary.Remove(Object)
+M:System.Collections.IDictionary.Contains|system.collections.idictionary.contains|IDictionary.Contains(Object)
+T:System.Collections.IList|system.collections.ilist|IList
+M:System.Collections.IList.Add|system.collections.ilist.add|IList.Add(Object)
+M:System.Collections.IList.Remove|system.collections.ilist.remove|IList.Remove(Object)
+M:System.Collections.IList.Contains|system.collections.ilist.contains|IList.Contains(Object)
+M:System.Collections.IList.get_Item|system.collections.ilist.get_item|IList.Item[Int32]
+T:System.Collections.Generic.IEnumerable`1|system.collections.generic.ienumerable-1|IEnumerable<T>
+M:System.Collections.Generic.IEnumerable`1.GetEnumerator|system.collections.generic.ienumerable-1.getenumerator|IEnumerable<T>.GetEnumerator()
+T:System.Collections.Generic.ICollection`1|system.collections.generic.icollection-1|ICollection<T>
+M:System.Collections.Generic.ICollection`1.Add|system.collections.generic.icollection-1.add|ICollection<T>.Add(T)
+M:System.Collections.Generic.ICollection`1.Remove|system.collections.generic.icollection-1.remove|ICollection<T>.Remove(T)
+M:System.Collections.Generic.ICollection`1.Contains|system.collections.generic.icollection-1.contains|ICollection<T>.Contains(T)
+M:System.Collections.Generic.ICollection`1.CopyTo|system.collections.generic.icollection-1.copyto|ICollection<T>.CopyTo(T[], Int32)
+M:System.Collections.Generic.ICollection`1.get_Count|system.collections.generic.icollection-1.count|ICollection<T>.Count
+T:System.Collections.Generic.IDictionary`2|system.collections.generic.idictionary-2|IDictionary<TKey, TValue>
+M:System.Collections.Generic.IDictionary`2.Add|system.collections.generic.idictionary-2.add|IDictionary<TKey, TValue>.Add(TKey, TValue)
+M:System.Collections.Generic.IDictionary`2.Remove|system.collections.generic.idictionary-2.remove|IDictionary<TKey, TValue>.Remove(TKey)
+M:System.Collections.Generic.IDictionary`2.ContainsKey|system.collections.generic.idictionary-2.containskey|IDictionary<TKey, TValue>.ContainsKey(TKey)
+M:System.Collections.Generic.IDictionary`2.TryGetValue|system.collections.generic.idictionary-2.trygetvalue|IDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+M:System.Collections.Generic.IDictionary`2.get_Item|system.collections.generic.idictionary-2.get_item|IDictionary<TKey, TValue>.Item[TKey]
+T:System.Collections.Generic.IList`1|system.collections.generic.ilist-1|IList<T>
+M:System.Collections.Generic.IList`1.Add|system.collections.generic.ilist-1.add|IList<T>.Add(T)
+M:System.Collections.Generic.IList`1.Remove|system.collections.generic.ilist-1.remove|IList<T>.Remove(T)
+M:System.Collections.Generic.IList`1.Contains|system.collections.generic.ilist-1.contains|IList<T>.Contains(T)
+M:System.Collections.Generic.IList`1.get_Item|system.collections.generic.ilist-1.get_item|IList<T>.Item[Int32]
+T:System.Collections.Generic.ISet`1|system.collections.generic.iset-1|ISet<T>
+M:System.Collections.Generic.ISet`1.Add|system.collections.generic.iset-1.add|ISet<T>.Add(T)
+M:System.Collections.Generic.ISet`1.Remove|system.collections.generic.iset-1.remove|ISet<T>.Remove(T)
+M:System.Collections.Generic.ISet`1.Contains|system.collections.generic.iset-1.contains|ISet<T>.Contains(T)
+T:Microsoft.AspNetCore.Http.HttpContext|microsoft.aspnetcore.http.httpcontext|HttpContext
+T:Microsoft.AspNetCore.Mvc.ControllerBase|microsoft.aspnetcore.mvc.controllerbase|ControllerBase
+T:Microsoft.AspNetCore.Builder.WebApplication|microsoft.aspnetcore.builder.webapplication|WebApplication
+M:Microsoft.AspNetCore.Builder.WebApplication.Run|microsoft.aspnetcore.builder.webapplication.run|WebApplication.Run()
+T:Microsoft.AspNetCore.Builder.WebApplicationBuilder|microsoft.aspnetcore.builder.webapplicationbuilder|WebApplicationBuilder  
+M:Microsoft.AspNetCore.Builder.WebApplicationBuilder.CreateBuilder|microsoft.aspnetcore.builder.webapplicationbuilder.createbuilder|WebApplicationBuilder.CreateBuilder(String[])  
+M:Microsoft.AspNetCore.Builder.WebApplication.MapGet|microsoft.aspnetcore.builder.webapplication.mapget|WebApplication.MapGet(String, Delegate)  
+M:Microsoft.AspNetCore.Builder.WebApplication.UseRouting|microsoft.aspnetcore.builder.webapplication.userouting|WebApplication.UseRouting()  
+M:Microsoft.AspNetCore.Builder.WebApplication.UseEndpoints|microsoft.aspnetcore.builder.webapplication.useendpoints|WebApplication.UseEndpoints(Action<IEndpointRouteBuilder>)  
+T:Microsoft.AspNetCore.Http.HttpResponse|microsoft.aspnetcore.http.httpresponse|HttpResponse  
+M:Microsoft.AspNetCore.Http.HttpResponse.WriteAsync|microsoft.aspnetcore.http.httpresponse.writeasync|HttpResponse.WriteAsync(String, CancellationToken)  
+T:Microsoft.AspNetCore.Http.HttpRequest|microsoft.aspnetcore.http.httprequest|HttpRequest  
+M:Microsoft.AspNetCore.Http.HttpRequest.ReadFormAsync|microsoft.aspnetcore.http.httprequest.readformasync|HttpRequest.ReadFormAsync(CancellationToken) 
+M:Microsoft.AspNetCore.Mvc.ControllerBase.Ok|microsoft.aspnetcore.mvc.controllerbase.ok|ControllerBase.Ok(Object)  
+M:Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest|microsoft.aspnetcore.mvc.controllerbase.badrequest|ControllerBase.BadRequest(Object)
+T:Microsoft.AspNetCore.Mvc.IActionResult|microsoft.aspnetcore.mvc.iactionresult|IActionResult
+T:Microsoft.AspNetCore.Mvc.ActionResult`1|microsoft.aspnetcore.mvc.actionresult-1|ActionResult<TValue>
+T:Microsoft.AspNetCore.Identity.IdentityUser`1|microsoft.aspnetcore.identity.identityuser-1|IdentityUser<TKey>
+T:Microsoft.AspNetCore.Identity.IdentityUserToken`1|microsoft.aspnetcore.identity.entityframeworkcore.identityusertoken-1|IdentityUserToken<TKey>
+T:Microsoft.AspNetCore.Identity.IdentityUserLogin`1|microsoft.aspnetcore.identity.entityframeworkcore.identityuserlogin-1|IdentityUserLogin<TKey>
+T:Microsoft.AspNetCore.Identity.IdentityUserClaim`1|microsoft.aspnetcore.identity.entityframeworkcore.identityuserclaim-1|IdentityUserClaim<TKey>
+T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext`5|microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5|IdentityUserContext<TUser,TKey,TUserClaim,TUserLogin,TUserToken>
+T:Microsoft.AspNetCore.Identity.UserManager`1|microsoft.aspnetcore.identity.usermanager-1|UserManager<TUser>  
+M:Microsoft.AspNetCore.Identity.UserManager`1.FindByIdAsync|microsoft.aspnetcore.identity.usermanager-1.findbyidasync|UserManager<TUser>.FindByIdAsync(String)  
+M:Microsoft.AspNetCore.Identity.UserManager`1.GetUsersForClaimAsync|microsoft.aspnetcore.identity.usermanager-1.getusersforclaimasync|UserManager<TUser>.GetUsersForClaimAsync(Claim)  
+T:Microsoft.AspNetCore.Identity.RoleManager`1|microsoft.aspnetcore.identity.rolemanager-1|RoleManager<TRole>  
+M:Microsoft.AspNetCore.Identity.RoleManager`1.CreateAsync|microsoft.aspnetcore.identity.rolemanager-1.createasync|RoleManager<TRole>.CreateAsync(TRole)  
+T:Microsoft.AspNetCore.Identity.SignInManager`1|microsoft.aspnetcore.identity.signinmanager-1|SignInManager<TUser>  
+M:Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync|microsoft.aspnetcore.identity.signinmanager-1.passwordsigninasync|SignInManager<TUser>.PasswordSignInAsync(TUser, String, Boolean, Boolean)  
+T:Microsoft.AspNetCore.Identity.IdentityRole`1|microsoft.aspnetcore.identity.entityframeworkcore.identityrole-1|IdentityRole<TKey>
+T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext|microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext|IdentityDbContext  
+T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`1|microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-1|IdentityDbContext<TUser>  
+T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`3|microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-3|IdentityDbContext<TUser, TRole, TKey>  
+T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8|microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-8|IdentityDbContext<TUser, TRole, TKey, TUserClaim, TUserRole, TUserLogin, TRoleClaim, TUserToken>
+T:System.Threading.Tasks.Task|system.threading.tasks.task|Task  
+T:System.Threading.Tasks.Task`1|system.threading.tasks.task-1|Task<TResult>
+M:System.Threading.Tasks.Task.FromResult|system.threading.tasks.task.fromresult|Task.FromResult<TResult>(TResult)  
+M:System.Threading.Tasks.Task.FromException|system.threading.tasks.task.fromexception|Task.FromException<TResult>(Exception)  
+T:System.Threading.Tasks.TaskCompletionSource`1|system.threading.tasks.taskcompletionsource-1|TaskCompletionSource<TResult>  
+M:System.Threading.Tasks.TaskCompletionSource`1.SetResult|system.threading.tasks.taskcompletionsource-1.setresult|TaskCompletionSource<TResult>.SetResult(TResult)  
+M:System.Threading.Tasks.TaskCompletionSource`1.SetException|system.threading.tasks.taskcompletionsource-1.setexception|TaskCompletionSource<TResult>.SetException(Exception)  
+T:System.Threading.Tasks.TaskFactory|system.threading.tasks.taskfactory|TaskFactory  
+T:System.Threading.Tasks.TaskScheduler|system.threading.tasks.taskscheduler|TaskScheduler  
+T:System.Threading.Tasks.TaskSchedulerException|system.threading.tasks.taskschedulerexception|TaskSchedulerException  
+T:System.Threading.Tasks.Parallel|system.threading.tasks.parallel|Parallel  
+M:System.Threading.Tasks.Parallel.For|system.threading.tasks.parallel.for|Parallel.For(Int32, Int32, Action<Int32>)  
+M:System.Threading.Tasks.Parallel.ForEach|system.threading.tasks.parallel.foreach|Parallel.ForEach<TSource>(IEnumerable<TSource>, Action<TSource>)  
+M:System.Threading.Tasks.Parallel.Invoke|system.threading.tasks.parallel.invoke|Parallel.Invoke(params Action[])  
+T:System.Threading.Tasks.TaskStatus|system.threading.tasks.taskstatus|TaskStatus  
+T:System.Threading.Tasks.TaskCanceledException|system.threading.tasks.taskcanceledexception|TaskCanceledException  
+M:System.Threading.Tasks.Task.WaitAll|system.threading.tasks.task.waitall|Task.WaitAll(Task[])  
+M:System.Threading.Tasks.Task.WhenAll|system.threading.tasks.task.whenall|Task.WhenAll(Task[])  
+M:System.Threading.Tasks.Task.WaitAny|system.threading.tasks.task.waitany|Task.WaitAny(Task[])  
+M:System.Threading.Tasks.Task.WhenAny|system.threading.tasks.task.whenany|Task.WhenAny(Task[])  
+T:System.Threading.Tasks.ValueTask|system.threading.tasks.valuetask|ValueTask  
+T:System.Threading.Tasks.ValueTask`1|system.threading.tasks.valuetask-1|ValueTask<TResult>  
+M:System.Threading.Tasks.ValueTask.AsTask|system.threading.tasks.valuetask.astask|ValueTask.AsTask()  
+T:System.Threading.Tasks.IAsyncEnumerable`1|system.threading.tasks.iasyncenumerable-1|IAsyncEnumerable<TResult>  
+M:System.Threading.Tasks.AsyncEnumerable.ToArrayAsync|system.threading.tasks.asyncenumerable.toarrayasync|AsyncEnumerable.ToArrayAsync<TResult>(IAsyncEnumerable<TResult>, CancellationToken)  
+T:System.Threading.Tasks.TaskCreationOptions|system.threading.tasks.taskcreationoptions|TaskCreationOptions
+
+
+https://learn.microsoft.com/en-us/ef/core/api/
+T:Microsoft.EntityFrameworkCore.DbContext|microsoft.entityframeworkcore.dbcontext|DbContext
+T:Microsoft.EntityFrameworkCore.DbSet`1|microsoft.entityframeworkcore.dbset-1|DbSet<T>
+T:Microsoft.EntityFrameworkCore.ModelBuilder|microsoft.entityframeworkcore.modelbuilder|ModelBuilder
+T:Microsoft.EntityFrameworkCore.DbContextOptionsBuilder|microsoft.entityframeworkcore.dbcontextoptionsbuilder|DbContextOptionsBuilder
+M:Microsoft.EntityFrameworkCore.ModelBuilder.Entity|microsoft.entityframeworkcore.modelbuilder.entity|ModelBuilder.Entity()

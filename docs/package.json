@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "vitepress": "^2.0.0-alpha.16",
+    "vitepress-sidebar": "^1.33.0"
+  },
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "docs:autogen": "cd ../src/backend/API && dotnet restore && dotnet clean && dotnet build --no-restore && cd - && defaultdocumentation --ConfigurationFilePath ./autodocsconfig/defaultdocumentationconfigAPI.json && defaultdocumentation --ConfigurationFilePath ./autodocsconfig/defaultdocumentationconfigAI.json && defaultdocumentation --ConfigurationFilePath ./autodocsconfig/defaultdocumentationconfigAA.json && defaultdocumentation --ConfigurationFilePath ./autodocsconfig/defaultdocumentationconfigModels.json",
+    "docs:postprocess": "cd ./autodocsconfig && npx tsx postprocess.mts \"../documentation/auto-docs/\" \"./extern-links.txt\" \"./aa-project-links.txt\" \"./ai-project-links.txt\" \"./api-project-links.txt\" \"./models-project-links.txt\""
+  },
+  "dependencies": {
+    "@types/node": "^24.10.0"
+  }
+}

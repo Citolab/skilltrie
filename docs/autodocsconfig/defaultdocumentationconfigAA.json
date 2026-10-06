@@ -1,0 +1,20 @@
+{
+    "AssemblyFilePath": "../../src/backend/AA/bin/Debug/net8.0/AA.dll",
+    "DocumentationFilePath": "../../src/backend/AA/bin/Debug/net8.0/AA.xml",
+    "OutputDirectoryPath": "../documentation/auto-docs/AA project",
+    "FileNameFactory": "DirectoryName",
+    "UrlFactories": ["DocItem"],
+    "IncludeUndocumentedItems": true,
+    "GeneratedPages": "Classes,Enums,Structs,Interfaces,Types,Methods,Operators",
+    "GeneratedAccessModifiers": "Api",
+    "HandleLineBreak": true,
+    "RemoveFileExtensionFromUrl": true,
+    "ExternLinksFilePaths": ["./extern-links.txt"],
+    "LinksOutputFilePath": "./aa-project-links.txt",
+    "Markdown.InvalidCharReplacement": "-",
+    "Markdown.InvalidCharToTrimRegex": "(?<=\\w\\().*?(?=\\))",
+    "Markdown.InvalidCharToReplaceRegex": ":",
+    "AssemblyDocItem": {
+        "Sections": ["Default"]
+    }
+}

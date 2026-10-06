@@ -1,0 +1,22 @@
+{
+    "AssemblyFilePath": "../../src/backend/API/bin/Debug/net8.0/API.dll",
+    "DocumentationFilePath": "../../src/backend/API/bin/Debug/net8.0/API.xml",
+    "OutputDirectoryPath": "../documentation/auto-docs/API project",
+    "FileNameFactory": "DirectoryName",
+    "UrlFactories": ["DocItem"],
+    "IncludeUndocumentedItems": true,
+    "GeneratedPages": "Classes,Enums,Structs,Interfaces,Types,Methods,Operators",
+    "GeneratedAccessModifiers": "Api",
+    "HandleLineBreak": true,
+    "RemoveFileExtensionFromUrl": true,
+    "ExternLinksFilePaths": ["./extern-links.txt"],
+    "LinksOutputFilePath": "./api-project-links.txt",
+    "Markdown.InvalidCharReplacement": "-",
+    "Markdown.InvalidCharToTrimRegex": "(?<=\\w\\().*?(?=\\))",
+    "Markdown.InvalidCharToReplaceRegex": ":",
+    "AssemblyDocItem": {
+        "Sections": [
+            "Default"
+        ]
+    }
+}

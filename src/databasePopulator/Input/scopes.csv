@@ -1,0 +1,27 @@
+scopeID,name,type
+185,statistics,subject
+160,measurement level,domain
+23,descriptive statistics,domain
+19,distributions,domain
+3,inferential statistics,domain
+162,measurement level,topic
+31,mean,topic
+32,median,topic
+46,mode,topic
+48,range,topic
+44,interquartile range,topic
+39,standard deviation,topic
+47,outliers,topic
+40,variance,topic
+66,covariance,topic
+36,correlation,topic
+20,normal,topic
+69,central limit theorem,topic
+70,t-distribution,topic
+59,sampling distributions,topic
+93,t-statistic,topic
+102,hypothesis,topic
+114,significance level,topic
+117,statistical errors,topic
+27,p-value,topic
+89,power,topic

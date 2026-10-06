@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "overallStrengths",
+    "areasForImprovement",
+    "generalGuidance",
+    "specificQuestionsNeedingAttention"
+  ],
+  "properties": {
+    "overallStrengths": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "areasForImprovement": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "generalGuidance": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "specificQuestionsNeedingAttention": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

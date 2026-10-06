@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500">
+  <path fill="none" stroke="#FFB979" stroke-width="41" stroke-linecap="round" stroke-linejoin="round" transform="matrix(3 0 0 3 308.5 143.453)" d="M1.37538e-05 25.8526L1.37538e-05 69.2814"></path>
+  <path fill="none" stroke="#2B2E31" stroke-width="48" stroke-linecap="square" stroke-linejoin="round" transform="matrix(3 0 0 3 308.5 143.453)" d="M1.37538e-05 25.8526L1.37538e-05 69.2814"></path>
+  <path fill="none" stroke="#FFB979" stroke-width="41" stroke-linecap="round" stroke-linejoin="round" transform="matrix(3 0 0 3 193 143.453)" d="M1.37538e-05 25.8526L1.37538e-05 69.2814"></path>
+  <path fill="none" stroke="#2B2E31" stroke-width="48" stroke-linecap="square" stroke-linejoin="round" transform="matrix(3 0 0 3 193 143.453)" d="M1.37538e-05 25.8526L1.37538e-05 69.2814"></path>
+  <path fill="#24262A" transform="matrix(3 0 0 3 251.5 201.203)" d="M-43.5 -17.5L43 -17.5L43 17.5L-43.5 17.5L-43.5 -17.5Z"></path>
+  <clipPath id="cl_3">
+    <rect x="121" y="148.70288" width="259.5" height="105"></rect>
+  </clipPath>
+  <g clip-path="url(#cl_3)">
+    <path fill="#5C2D0C" transform="matrix(3 0 0 3 250 166.703)" d="M-45.5 -4.5L45.5 -4.5L45.5 4.5L-45.5 4.5L-45.5 -4.5Z"></path>
+  </g>
+  <path fill="none" stroke="#FFAC00" stroke-width="3" stroke-miterlimit="4" transform="matrix(3 0 0 3 250 163.703)" d="M-7 -1.5C-7 -3.15685 -5.65685 -4.5 -4 -4.5L4 -4.5C5.65685 -4.5 7 -3.15685 7 -1.5L7 1.5C7 3.15685 5.65685 4.5 4 4.5L-4 4.5C-5.65685 4.5 -7 3.15685 -7 1.5L-7 -1.5Z"></path>
+</svg>

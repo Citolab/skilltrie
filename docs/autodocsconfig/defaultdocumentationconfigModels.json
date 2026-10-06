@@ -1,0 +1,22 @@
+{
+    "AssemblyFilePath": "../../src/backend/Models/bin/Debug/net8.0/Models.dll",
+    "DocumentationFilePath": "../../src/backend/Models/bin/Debug/net8.0/Models.xml",
+    "OutputDirectoryPath": "../documentation/auto-docs/Models project",
+    "FileNameFactory": "DirectoryName",
+    "UrlFactories": ["DocItem"],
+    "IncludeUndocumentedItems": true,
+    "GeneratedPages": "Classes,Enums,Structs,Interfaces,Types,Methods,Operators",
+    "GeneratedAccessModifiers": "Api",
+    "HandleLineBreak": true,
+    "RemoveFileExtensionFromUrl": true,
+    "ExternLinksFilePaths": ["./extern-links.txt"],
+    "LinksOutputFilePath": "./models-project-links.txt",
+    "Markdown.InvalidCharReplacement": "-",
+    "Markdown.InvalidCharToTrimRegex": "(?<=\\w\\().*?(?=\\))",
+    "Markdown.InvalidCharToReplaceRegex": ":",
+    "AssemblyDocItem": {
+        "Sections": [
+            "Default"
+        ]
+    }
+}

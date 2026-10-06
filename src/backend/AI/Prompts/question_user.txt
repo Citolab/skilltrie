@@ -1,0 +1,13 @@
+Je krijgt voorbeeld-examenvragen voor het domein {topicName} (ID: {topicId}).
+1. Analyseer de structuur, toon en inhoud van de voorbeelden.
+2. Maak {questionCount} nieuwe examenvragen die volledig voldoet aan de JSON-schema hierboven.
+3. Vul de lege velden in de JSON-template in met realistische, statistisch correcte data.
+4. Vul de volledige vraagtekst in Question.
+5. De opties met correctheid in Options.
+6. Voeg een volledige, correcte stap-voor-stap oplossing toe in Answer_explanation.
+7. Controleer je berekeningen en pas aan indien nodig.
+8. De vraag moet binnen het domein {topicName} vallen en zo min mogelijk binnen andere onderwerpen treden.
+9. Volg alle regels uit de system prompt.
+
+Nu komen een of meerdere voorbeeld-examenvragen met antwoord opties en uitleg.
+Genereer daarna {questionCount} nieuwe vragen.

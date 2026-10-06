@@ -1,0 +1,10 @@
+Name,Price,ClothingType,RiveFile,RiveArtboard,RiveStateMachine,RiveInput,RiveInputValue,DefaultOwned,IconFile
+sun_glasses,50,Glasses,avatar.riv,AvatarBackground,State Machine 1,glasses,1,FALSE,/customisation/cosmetics/sun_glasses.svg
+hair_boy,60,Hair,avatar.riv,AvatarBackground,State Machine 1,hair,1,FALSE,/customisation/cosmetics/hair_boy.svg
+hair_girl,60,Hair,avatar.riv,AvatarBackground,State Machine 1,hair,2,FALSE,/customisation/cosmetics/hair_girl.svg
+hat,80,Hat,avatar.riv,AvatarBackground,State Machine 1,hat,1,FALSE,/customisation/cosmetics/hat.svg
+pants,0,Pants,avatar.riv,AvatarBackground,State Machine 1,pants,1,TRUE,/customisation/cosmetics/pants.svg
+shirt_blue,50,Shirt,avatar.riv,AvatarBackground,State Machine 1,shirt,1,FALSE,/customisation/cosmetics/shirt_blue.svg
+shirt_green,0,Shirt,avatar.riv,AvatarBackground,State Machine 1,shirt,2,TRUE,/customisation/cosmetics/shirt_green.svg
+shirt_orange,50,Shirt,avatar.riv,AvatarBackground,State Machine 1,shirt,3,FALSE,/customisation/cosmetics/shirt_orange.svg
+punk_jacket,200,Shirt,avatar.riv,AvatarBackground,State Machine 1,shirt,4,FALSE,/customisation/cosmetics/punk_jacket.svg

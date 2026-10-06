@@ -1,0 +1,56 @@
+
+P:AA.Algorithm.Key|AA/Algorithm/index.md#AA.Algorithm.Key|Key
+M:AA.Algorithm.#ctor(System.String)|AA/Algorithm/index.md#AA.Algorithm.Algorithm()|Algorithm(string)
+N:AA|index.md#AA|AA
+T:AA.Algorithm|AA/Algorithm/index.md|Algorithm
+M:AA.IAlgorithmFactory`1.Get(System.String)|AA/IAlgorithmFactory<T>/Get().md|Get(string)
+T:AA.IAlgorithmFactory`1|AA/IAlgorithmFactory<T>/index.md|IAlgorithmFactory<T>
+M:AA.AlgorithmFactory`1.#ctor(System.Collections.Generic.IEnumerable{`0})|AA/AlgorithmFactory<T>/index.md#AA.AlgorithmFactory<T>.AlgorithmFactory()|AlgorithmFactory(IEnumerable<T>)
+M:AA.AlgorithmFactory`1.Get(System.String)|AA/AlgorithmFactory<T>/Get().md|Get(string)
+T:AA.AlgorithmFactory`1|AA/AlgorithmFactory<T>/index.md|AlgorithmFactory<T>
+M:AA.AlgorithmServiceAdder.AddAlgorithms(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly)|AA/AlgorithmServiceAdder/AddAlgorithms().md|AddAlgorithms(this IServiceCollection, Assembly)
+T:AA.AlgorithmServiceAdder|AA/AlgorithmServiceAdder/index.md|AlgorithmServiceAdder
+M:AA.UserProficiencyAlgorithm.IUserProficiencyAlgorithm.CalculateNewProficiency(System.Decimal)|AA/UserProficiencyAlgorithm/IUserProficiencyAlgorithm/CalculateNewProficiency().md|CalculateNewProficiency(decimal)
+M:AA.UserProficiencyAlgorithm.IUserProficiencyAlgorithm.UpdateProficiency(System.Int32,System.Int32)|AA/UserProficiencyAlgorithm/IUserProficiencyAlgorithm/UpdateProficiency().md|UpdateProficiency(int, int)
+N:AA.UserProficiencyAlgorithm|index.md#AA.UserProficiencyAlgorithm|AA.UserProficiencyAlgorithm
+T:AA.UserProficiencyAlgorithm.IUserProficiencyAlgorithm|AA/UserProficiencyAlgorithm/IUserProficiencyAlgorithm/index.md|IUserProficiencyAlgorithm
+M:AA.UserProficiencyAlgorithm.simpleUPA.#ctor(Models.AppDbContext)|AA/UserProficiencyAlgorithm/simpleUPA/index.md#AA.UserProficiencyAlgorithm.simpleUPA.simpleUPA()|simpleUPA(AppDbContext)
+M:AA.UserProficiencyAlgorithm.simpleUPA.CalculateNewProficiency(System.Decimal)|AA/UserProficiencyAlgorithm/simpleUPA/CalculateNewProficiency().md|CalculateNewProficiency(decimal)
+M:AA.UserProficiencyAlgorithm.simpleUPA.UpdateProficiency(System.Int32,System.Int32)|AA/UserProficiencyAlgorithm/simpleUPA/UpdateProficiency().md|UpdateProficiency(int, int)
+T:AA.UserProficiencyAlgorithm.simpleUPA|AA/UserProficiencyAlgorithm/simpleUPA/index.md|simpleUPA
+M:AA.UserMasteryAlgorithm.IUserMasteryAlgorithm.UpdateMastery(System.Int32,System.Int32)|AA/UserMasteryAlgorithm/IUserMasteryAlgorithm/UpdateMastery().md|UpdateMastery(int, int)
+N:AA.UserMasteryAlgorithm|index.md#AA.UserMasteryAlgorithm|AA.UserMasteryAlgorithm
+T:AA.UserMasteryAlgorithm.IUserMasteryAlgorithm|AA/UserMasteryAlgorithm/IUserMasteryAlgorithm/index.md|IUserMasteryAlgorithm
+M:AA.QualityAlgorithm.IQualityAlgorithm.UpdateQuality(System.Int32)|AA/QualityAlgorithm/IQualityAlgorithm/UpdateQuality().md|UpdateQuality(int)
+M:AA.QualityAlgorithm.IQualityAlgorithm.CalculateQuality(System.Int32)|AA/QualityAlgorithm/IQualityAlgorithm/CalculateQuality().md|CalculateQuality(int)
+N:AA.QualityAlgorithm|index.md#AA.QualityAlgorithm|AA.QualityAlgorithm
+T:AA.QualityAlgorithm.IQualityAlgorithm|AA/QualityAlgorithm/IQualityAlgorithm/index.md|IQualityAlgorithm
+M:AA.QualityAlgorithm.SimpleQA.#ctor(Models.AppDbContext)|AA/QualityAlgorithm/SimpleQA/index.md#AA.QualityAlgorithm.SimpleQA.SimpleQA()|SimpleQA(AppDbContext)
+M:AA.QualityAlgorithm.SimpleQA.UpdateQuality(System.Int32)|AA/QualityAlgorithm/SimpleQA/UpdateQuality().md|UpdateQuality(int)
+M:AA.QualityAlgorithm.SimpleQA.CalculateQuality(System.Int32)|AA/QualityAlgorithm/SimpleQA/CalculateQuality().md|CalculateQuality(int)
+T:AA.QualityAlgorithm.SimpleQA|AA/QualityAlgorithm/SimpleQA/index.md|SimpleQA
+M:AA.NextDomainAlgorithm.INextDomainAlgorithm.UnlockedDomains(System.Int32)|AA/NextDomainAlgorithm/INextDomainAlgorithm/UnlockedDomains().md|UnlockedDomains(int)
+M:AA.NextDomainAlgorithm.INextDomainAlgorithm.DomainIsUnlocked(System.Int32,System.Int32)|AA/NextDomainAlgorithm/INextDomainAlgorithm/DomainIsUnlocked().md|DomainIsUnlocked(int, int)
+N:AA.NextDomainAlgorithm|index.md#AA.NextDomainAlgorithm|AA.NextDomainAlgorithm
+T:AA.NextDomainAlgorithm.INextDomainAlgorithm|AA/NextDomainAlgorithm/INextDomainAlgorithm/index.md|INextDomainAlgorithm
+M:AA.NextDomainAlgorithm.SimpleNDA.#ctor(Models.AppDbContext)|AA/NextDomainAlgorithm/SimpleNDA/index.md#AA.NextDomainAlgorithm.SimpleNDA.SimpleNDA()|SimpleNDA(AppDbContext)
+M:AA.NextDomainAlgorithm.SimpleNDA.UnlockedDomains(System.Int32)|AA/NextDomainAlgorithm/SimpleNDA/UnlockedDomains().md|UnlockedDomains(int)
+M:AA.NextDomainAlgorithm.SimpleNDA.DomainIsUnlocked(System.Int32,System.Int32)|AA/NextDomainAlgorithm/SimpleNDA/DomainIsUnlocked().md|DomainIsUnlocked(int, int)
+T:AA.NextDomainAlgorithm.SimpleNDA|AA/NextDomainAlgorithm/SimpleNDA/index.md|SimpleNDA
+M:AA.NewItemsAlgorithm.INewItemsAlgorithm.NewItemBatchNeeded(System.Int32)|AA/NewItemsAlgorithm/INewItemsAlgorithm/NewItemBatchNeeded().md|NewItemBatchNeeded(int)
+M:AA.NewItemsAlgorithm.INewItemsAlgorithm.CalculateBatchSize(System.Int32)|AA/NewItemsAlgorithm/INewItemsAlgorithm/CalculateBatchSize().md|CalculateBatchSize(int)
+N:AA.NewItemsAlgorithm|index.md#AA.NewItemsAlgorithm|AA.NewItemsAlgorithm
+T:AA.NewItemsAlgorithm.INewItemsAlgorithm|AA/NewItemsAlgorithm/INewItemsAlgorithm/index.md|INewItemsAlgorithm
+M:AA.NewItemsAlgorithm.SimpleNIA.#ctor(Models.AppDbContext)|AA/NewItemsAlgorithm/SimpleNIA/index.md#AA.NewItemsAlgorithm.SimpleNIA.SimpleNIA()|SimpleNIA(AppDbContext)
+M:AA.NewItemsAlgorithm.SimpleNIA.NewItemBatchNeeded(System.Int32)|AA/NewItemsAlgorithm/SimpleNIA/NewItemBatchNeeded().md|NewItemBatchNeeded(int)
+M:AA.NewItemsAlgorithm.SimpleNIA.CalculateBatchSize(System.Int32)|AA/NewItemsAlgorithm/SimpleNIA/CalculateBatchSize().md|CalculateBatchSize(int)
+T:AA.NewItemsAlgorithm.SimpleNIA|AA/NewItemsAlgorithm/SimpleNIA/index.md|SimpleNIA
+M:AA.DefaultProficiencyAlgorithm.IDefaultProficiencyAlgorithm.CreateDefaultProficiencies(System.Int32)|AA/DefaultProficiencyAlgorithm/IDefaultProficiencyAlgorithm/CreateDefaultProficiencies().md|CreateDefaultProficiencies(int)
+N:AA.DefaultProficiencyAlgorithm|index.md#AA.DefaultProficiencyAlgorithm|AA.DefaultProficiencyAlgorithm
+T:AA.DefaultProficiencyAlgorithm.IDefaultProficiencyAlgorithm|AA/DefaultProficiencyAlgorithm/IDefaultProficiencyAlgorithm/index.md|IDefaultProficiencyAlgorithm
+M:AA.DefaultProficiencyAlgorithm.SimpleDPA.#ctor(Models.AppDbContext)|AA/DefaultProficiencyAlgorithm/SimpleDPA/index.md#AA.DefaultProficiencyAlgorithm.SimpleDPA.SimpleDPA()|SimpleDPA(AppDbContext)
+M:AA.DefaultProficiencyAlgorithm.SimpleDPA.CreateDefaultProficiencies(System.Int32)|AA/DefaultProficiencyAlgorithm/SimpleDPA/CreateDefaultProficiencies().md|CreateDefaultProficiencies(int)
+T:AA.DefaultProficiencyAlgorithm.SimpleDPA|AA/DefaultProficiencyAlgorithm/SimpleDPA/index.md|SimpleDPA
+M:AA.DefaultMasteryAlgorithm.IDefaultMasteryAlgorithm.CreateDefaultMasteries(System.Int32)|AA/DefaultMasteryAlgorithm/IDefaultMasteryAlgorithm/CreateDefaultMasteries().md|CreateDefaultMasteries(int)
+N:AA.DefaultMasteryAlgorithm|index.md#AA.DefaultMasteryAlgorithm|AA.DefaultMasteryAlgorithm
+T:AA.DefaultMasteryAlgorithm.IDefaultMasteryAlgorithm|AA/DefaultMasteryAlgorithm/IDefaultMasteryAlgorithm/index.md|IDefaultMasteryAlgorithm

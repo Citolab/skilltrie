@@ -1,0 +1,7 @@
+
+M:AI.IAIAPI.PromptAI(System.Collections.Generic.List{System.Object},System.Int32)|AI/IAIAPI/PromptAI().md|PromptAI(List<object>, int)
+N:AI|index.md#AI|AI
+T:AI.IAIAPI|AI/IAIAPI/index.md|IAIAPI
+M:AI.AIAPI.#ctor(Microsoft.Extensions.Logging.ILogger{AI.AIAPI})|AI/AIAPI/index.md#AI.AIAPI.AIAPI()|AIAPI(ILogger<AIAPI>)
+M:AI.AIAPI.PromptAI(System.Collections.Generic.List{System.Object},System.Int32)|AI/AIAPI/PromptAI().md|PromptAI(List<object>, int)
+T:AI.AIAPI|AI/AIAPI/index.md|AIAPI

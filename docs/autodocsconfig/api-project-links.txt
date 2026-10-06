@@ -1,0 +1,446 @@
+
+M:API.Tools.QTIConverting.QTIXML.Convert(Models.Item)|API/Tools/QTIConverting/QTIXML/Convert().md|Convert(Item)
+M:API.Tools.QTIConverting.QTIXML.GenerateAssesment(Models.Item[])|API/Tools/QTIConverting/QTIXML/GenerateAssesment().md|GenerateAssesment(Item[])
+N:API.Tools.QTIConverting|index.md#API.Tools.QTIConverting|API.Tools.QTIConverting
+T:API.Tools.QTIConverting.QTIXML|API/Tools/QTIConverting/QTIXML/index.md|QTIXML
+P:API.Tools.AI.Token.Key|API/Tools/AI/Token/index.md#API.Tools.AI.Token.Key|Key
+P:API.Tools.AI.Token.Value|API/Tools/AI/Token/index.md#API.Tools.AI.Token.Value|Value
+M:API.Tools.AI.Token.#ctor(System.String,System.String)|API/Tools/AI/Token/index.md#API.Tools.AI.Token.Token()|Token(string, string)
+N:API.Tools.AI|index.md#API.Tools.AI|API.Tools.AI
+T:API.Tools.AI.Token|API/Tools/AI/Token/index.md|Token
+M:API.Tools.AI.ItemTokenizer.ExtractMetadata(System.String)|API/Tools/AI/ItemTokenizer/ExtractMetadata().md|ExtractMetadata(string)
+M:API.Tools.AI.ItemTokenizer.ExtractSection(System.String,System.String,System.String)|API/Tools/AI/ItemTokenizer/ExtractSection().md|ExtractSection(string, string, string)
+M:API.Tools.AI.ItemTokenizer.ExtractOptions(System.String)|API/Tools/AI/ItemTokenizer/ExtractOptions().md|ExtractOptions(string)
+T:API.Tools.AI.ItemTokenizer|API/Tools/AI/ItemTokenizer/index.md|ItemTokenizer
+M:API.Tools.AI.ItemParser.#ctor(API.Tools.AI.ItemTokenizer)|API/Tools/AI/ItemParser/index.md#API.Tools.AI.ItemParser.ItemParser()|ItemParser(ItemTokenizer)
+M:API.Tools.AI.ItemParser.ParseFromText(System.String)|API/Tools/AI/ItemParser/ParseFromText().md|ParseFromText(string)
+T:API.Tools.AI.ItemParser|API/Tools/AI/ItemParser/index.md|ItemParser
+M:API.Services.IAIService.MakeQuestion(System.Int32)|API/Services/IAIService/MakeQuestion().md|MakeQuestion(int)
+M:API.Services.IAIService.AiFeedback(System.Int32)|API/Services/IAIService/AiFeedback().md|AiFeedback(int)
+N:API.Services|index.md#API.Services|API.Services
+T:API.Services.IAIService|API/Services/IAIService/index.md|IAIService
+M:API.Services.AIService.#ctor(Models.AppDbContext,AI.IAIAPI,API.Handlers.AiHandler)|API/Services/AIService/index.md#API.Services.AIService.AIService()|AIService(AppDbContext, IAIAPI, AiHandler)
+M:API.Services.AIService.MakeQuestion(System.Int32)|API/Services/AIService/MakeQuestion().md|MakeQuestion(int)
+M:API.Services.AIService.AiFeedback(System.Int32)|API/Services/AIService/AiFeedback().md|AiFeedback(int)
+T:API.Services.AIService|API/Services/AIService/index.md|AIService
+M:API.Services.IAuthService.RegisterUser(Models.UserCreateRecord)|API/Services/IAuthService/RegisterUser().md|RegisterUser(UserCreateRecord)
+M:API.Services.IAuthService.AuthenticateUserAsync(System.String,System.String)|API/Services/IAuthService/AuthenticateUserAsync().md|AuthenticateUserAsync(string, string)
+M:API.Services.IAuthService.SignInAsync(Models.User,System.Boolean)|API/Services/IAuthService/SignInAsync().md|SignInAsync(User, bool)
+M:API.Services.IAuthService.SignOutAsync|API/Services/IAuthService/SignOutAsync().md|SignOutAsync()
+T:API.Services.IAuthService|API/Services/IAuthService/index.md|IAuthService
+M:API.Services.AuthService.#ctor(Models.AppDbContext,API.Services.IUserService,Microsoft.AspNetCore.Identity.UserManager{Models.User},Microsoft.AspNetCore.Identity.SignInManager{Models.User})|API/Services/AuthService/index.md#API.Services.AuthService.AuthService()|AuthService(AppDbContext, IUserService, UserManager<User>, SignInManager<User>)
+M:API.Services.AuthService.RegisterUser(Models.UserCreateRecord)|API/Services/AuthService/RegisterUser().md|RegisterUser(UserCreateRecord)
+M:API.Services.AuthService.AuthenticateUserAsync(System.String,System.String)|API/Services/AuthService/AuthenticateUserAsync().md|AuthenticateUserAsync(string, string)
+M:API.Services.AuthService.SignInAsync(Models.User,System.Boolean)|API/Services/AuthService/SignInAsync().md|SignInAsync(User, bool)
+M:API.Services.AuthService.SignOutAsync|API/Services/AuthService/SignOutAsync().md|SignOutAsync()
+T:API.Services.AuthService|API/Services/AuthService/index.md|AuthService
+M:API.Services.ICosmeticService.GetCosmetic(System.Int32)|API/Services/ICosmeticService/GetCosmetic().md|GetCosmetic(int)
+M:API.Services.ICosmeticService.GetCosmetics(System.Nullable{Models.ClothingType})|API/Services/ICosmeticService/GetCosmetics().md|GetCosmetics(Nullable<ClothingType>)
+M:API.Services.ICosmeticService.GetDefaultCosmetics|API/Services/ICosmeticService/GetDefaultCosmetics().md|GetDefaultCosmetics()
+T:API.Services.ICosmeticService|API/Services/ICosmeticService/index.md|ICosmeticService
+M:API.Services.CosmeticService.#ctor(Models.AppDbContext)|API/Services/CosmeticService/index.md#API.Services.CosmeticService.CosmeticService()|CosmeticService(AppDbContext)
+M:API.Services.CosmeticService.GetCosmetic(System.Int32)|API/Services/CosmeticService/GetCosmetic().md|GetCosmetic(int)
+M:API.Services.CosmeticService.GetCosmetics(System.Nullable{Models.ClothingType})|API/Services/CosmeticService/GetCosmetics().md|GetCosmetics(Nullable<ClothingType>)
+M:API.Services.CosmeticService.GetDefaultCosmetics|API/Services/CosmeticService/GetDefaultCosmetics().md|GetDefaultCosmetics()
+T:API.Services.CosmeticService|API/Services/CosmeticService/index.md|CosmeticService
+M:API.Services.IUserCosmeticService.GetUserCosmetic(System.Int32,System.Int32)|API/Services/IUserCosmeticService/GetUserCosmetic().md|GetUserCosmetic(int, int)
+M:API.Services.IUserCosmeticService.GetUserCosmetics(System.Int32,System.Nullable{System.Boolean},System.Nullable{Models.ClothingType})|API/Services/IUserCosmeticService/GetUserCosmetics().md|GetUserCosmetics(int, Nullable<bool>, Nullable<ClothingType>)
+M:API.Services.IUserCosmeticService.BuyUserCosmetic(System.Int32,System.Int32)|API/Services/IUserCosmeticService/BuyUserCosmetic().md|BuyUserCosmetic(int, int)
+M:API.Services.IUserCosmeticService.EquipUserCosmetic(System.Int32,System.Int32,System.Boolean)|API/Services/IUserCosmeticService/EquipUserCosmetic().md|EquipUserCosmetic(int, int, bool)
+M:API.Services.IUserCosmeticService.DeleteUserCosmetic(System.Int32,System.Int32)|API/Services/IUserCosmeticService/DeleteUserCosmetic().md|DeleteUserCosmetic(int, int)
+M:API.Services.IUserCosmeticService.SellUserCosmetic(System.Int32,System.Int32)|API/Services/IUserCosmeticService/SellUserCosmetic().md|SellUserCosmetic(int, int)
+T:API.Services.IUserCosmeticService|API/Services/IUserCosmeticService/index.md|IUserCosmeticService
+M:API.Services.UserCosmeticService.#ctor(Models.AppDbContext,API.Services.IUserService,API.Services.ICosmeticService,API.Services.IUserCurrencyService,API.Handlers.UserCosmeticHandler)|API/Services/UserCosmeticService/index.md#API.Services.UserCosmeticService.UserCosmeticService()|UserCosmeticService(AppDbContext, IUserService, ICosmeticService, IUserCurrencyService, UserCosmeticHandler)
+M:API.Services.UserCosmeticService.GetUserCosmetic(System.Int32,System.Int32)|API/Services/UserCosmeticService/GetUserCosmetic().md|GetUserCosmetic(int, int)
+M:API.Services.UserCosmeticService.GetUserCosmetics(System.Int32,System.Nullable{System.Boolean},System.Nullable{Models.ClothingType})|API/Services/UserCosmeticService/GetUserCosmetics().md|GetUserCosmetics(int, Nullable<bool>, Nullable<ClothingType>)
+M:API.Services.UserCosmeticService.BuyUserCosmetic(System.Int32,System.Int32)|API/Services/UserCosmeticService/BuyUserCosmetic().md|BuyUserCosmetic(int, int)
+M:API.Services.UserCosmeticService.EquipUserCosmetic(System.Int32,System.Int32,System.Boolean)|API/Services/UserCosmeticService/EquipUserCosmetic().md|EquipUserCosmetic(int, int, bool)
+M:API.Services.UserCosmeticService.DeleteUserCosmetic(System.Int32,System.Int32)|API/Services/UserCosmeticService/DeleteUserCosmetic().md|DeleteUserCosmetic(int, int)
+M:API.Services.UserCosmeticService.SellUserCosmetic(System.Int32,System.Int32)|API/Services/UserCosmeticService/SellUserCosmetic().md|SellUserCosmetic(int, int)
+T:API.Services.UserCosmeticService|API/Services/UserCosmeticService/index.md|UserCosmeticService
+M:API.Services.ICurrencyService.GetCurrency(System.Int32)|API/Services/ICurrencyService/GetCurrency().md|GetCurrency(int)
+M:API.Services.ICurrencyService.GetCurrencies|API/Services/ICurrencyService/GetCurrencies().md|GetCurrencies()
+T:API.Services.ICurrencyService|API/Services/ICurrencyService/index.md|ICurrencyService
+M:API.Services.CurrencyService.#ctor(Models.AppDbContext)|API/Services/CurrencyService/index.md#API.Services.CurrencyService.CurrencyService()|CurrencyService(AppDbContext)
+M:API.Services.CurrencyService.GetCurrency(System.Int32)|API/Services/CurrencyService/GetCurrency().md|GetCurrency(int)
+M:API.Services.CurrencyService.GetCurrencies|API/Services/CurrencyService/GetCurrencies().md|GetCurrencies()
+T:API.Services.CurrencyService|API/Services/CurrencyService/index.md|CurrencyService
+M:API.Services.IUserCurrencyService.GetUserCurrencies(System.Int32)|API/Services/IUserCurrencyService/GetUserCurrencies().md|GetUserCurrencies(int)
+M:API.Services.IUserCurrencyService.UpdateUserCurrency(System.Int32,System.Int32,System.Int32)|API/Services/IUserCurrencyService/UpdateUserCurrency().md|UpdateUserCurrency(int, int, int)
+T:API.Services.IUserCurrencyService|API/Services/IUserCurrencyService/index.md|IUserCurrencyService
+M:API.Services.UserCurrencyService.#ctor(Models.AppDbContext,API.Services.IUserService,API.Services.ICurrencyService,API.Handlers.UserCurrencyHandler)|API/Services/UserCurrencyService/index.md#API.Services.UserCurrencyService.UserCurrencyService()|UserCurrencyService(AppDbContext, IUserService, ICurrencyService, UserCurrencyHandler)
+M:API.Services.UserCurrencyService.GetUserCurrencies(System.Int32)|API/Services/UserCurrencyService/GetUserCurrencies().md|GetUserCurrencies(int)
+M:API.Services.UserCurrencyService.UpdateUserCurrency(System.Int32,System.Int32,System.Int32)|API/Services/UserCurrencyService/UpdateUserCurrency().md|UpdateUserCurrency(int, int, int)
+T:API.Services.UserCurrencyService|API/Services/UserCurrencyService/index.md|UserCurrencyService
+M:API.Services.IDomainService.VerifyDomainExists(System.Int32)|API/Services/IDomainService/VerifyDomainExists().md|VerifyDomainExists(int)
+M:API.Services.IDomainService.UpdateDomainsForItem(Models.Item,System.Collections.Generic.ICollection{System.Int32})|API/Services/IDomainService/UpdateDomainsForItem().md|UpdateDomainsForItem(Item, ICollection<int>)
+M:API.Services.IDomainService.GetUserDomains(System.Int32)|API/Services/IDomainService/GetUserDomains().md|GetUserDomains(int)
+M:API.Services.IDomainService.GetAllDomains|API/Services/IDomainService/GetAllDomains().md|GetAllDomains()
+M:API.Services.IDomainService.UpdateUserProficiency(System.Int32,System.Int32)|API/Services/IDomainService/UpdateUserProficiency().md|UpdateUserProficiency(int, int)
+M:API.Services.IDomainService.DefaultUserProficiencies(System.Int32)|API/Services/IDomainService/DefaultUserProficiencies().md|DefaultUserProficiencies(int)
+M:API.Services.IDomainService.UpdateUserDomainMastery(System.Int32,System.Int32,System.Boolean)|API/Services/IDomainService/UpdateUserDomainMastery().md|UpdateUserDomainMastery(int, int, bool)
+M:API.Services.IDomainService.DefaultDomainMastery(System.Int32)|API/Services/IDomainService/DefaultDomainMastery().md|DefaultDomainMastery(int)
+T:API.Services.IDomainService|API/Services/IDomainService/index.md|IDomainService
+M:API.Services.DomainService.#ctor(Models.AppDbContext,API.Handlers.DomainHandler,AA.IAlgorithmFactory{AA.UserProficiencyAlgorithm.IUserProficiencyAlgorithm})|API/Services/DomainService/index.md#API.Services.DomainService.DomainService()|DomainService(AppDbContext, DomainHandler, IAlgorithmFactory<IUserProficiencyAlgorithm>)
+M:API.Services.DomainService.VerifyDomainExists(System.Int32)|API/Services/DomainService/VerifyDomainExists().md|VerifyDomainExists(int)
+M:API.Services.DomainService.UpdateDomainsForItem(Models.Item,System.Collections.Generic.ICollection{System.Int32})|API/Services/DomainService/UpdateDomainsForItem().md|UpdateDomainsForItem(Item, ICollection<int>)
+M:API.Services.DomainService.GetUserDomains(System.Int32)|API/Services/DomainService/GetUserDomains().md|GetUserDomains(int)
+M:API.Services.DomainService.GetAllDomains|API/Services/DomainService/GetAllDomains().md|GetAllDomains()
+M:API.Services.DomainService.UpdateUserProficiency(System.Int32,System.Int32)|API/Services/DomainService/UpdateUserProficiency().md|UpdateUserProficiency(int, int)
+M:API.Services.DomainService.DefaultUserProficiencies(System.Int32)|API/Services/DomainService/DefaultUserProficiencies().md|DefaultUserProficiencies(int)
+M:API.Services.DomainService.UpdateUserDomainMastery(System.Int32,System.Int32,System.Boolean)|API/Services/DomainService/UpdateUserDomainMastery().md|UpdateUserDomainMastery(int, int, bool)
+M:API.Services.DomainService.DefaultDomainMastery(System.Int32)|API/Services/DomainService/DefaultDomainMastery().md|DefaultDomainMastery(int)
+T:API.Services.DomainService|API/Services/DomainService/index.md|DomainService
+M:API.Services.IGroupService.CreateGroup(System.String)|API/Services/IGroupService/CreateGroup().md|CreateGroup(string)
+M:API.Services.IGroupService.GetGroup(System.Int32)|API/Services/IGroupService/GetGroup().md|GetGroup(int)
+M:API.Services.IGroupService.AddMember(System.Int32,System.Int32)|API/Services/IGroupService/AddMember().md|AddMember(int, int)
+M:API.Services.IGroupService.RemoveMember(System.Int32,System.Int32)|API/Services/IGroupService/RemoveMember().md|RemoveMember(int, int)
+M:API.Services.IGroupService.GetGroups(System.Int32,System.Int32)|API/Services/IGroupService/GetGroups().md|GetGroups(int, int)
+M:API.Services.IGroupService.UpdateGroup(System.Int32,System.String)|API/Services/IGroupService/UpdateGroup().md|UpdateGroup(int, string)
+M:API.Services.IGroupService.DeleteGroup(System.Int32)|API/Services/IGroupService/DeleteGroup().md|DeleteGroup(int)
+M:API.Services.IGroupService.GetGroupProficiency(System.Int32,System.Nullable{System.Int32},System.Collections.Generic.List{System.Int32})|API/Services/IGroupService/GetGroupProficiency().md|GetGroupProficiency(int, Nullable<int>, List<int>)
+M:API.Services.IGroupService.GetScore(System.Int32,System.Int32)|API/Services/IGroupService/GetScore().md|GetScore(int, int)
+T:API.Services.IGroupService|API/Services/IGroupService/index.md|IGroupService
+M:API.Services.GroupService.#ctor(Models.AppDbContext,API.Handlers.IGroupHandler)|API/Services/GroupService/index.md#API.Services.GroupService.GroupService()|GroupService(AppDbContext, IGroupHandler)
+M:API.Services.GroupService.CreateGroup(System.String)|API/Services/GroupService/CreateGroup().md|CreateGroup(string)
+M:API.Services.GroupService.GetGroup(System.Int32)|API/Services/GroupService/GetGroup().md|GetGroup(int)
+M:API.Services.GroupService.AddMember(System.Int32,System.Int32)|API/Services/GroupService/AddMember().md|AddMember(int, int)
+M:API.Services.GroupService.RemoveMember(System.Int32,System.Int32)|API/Services/GroupService/RemoveMember().md|RemoveMember(int, int)
+M:API.Services.GroupService.GetGroups(System.Int32,System.Int32)|API/Services/GroupService/GetGroups().md|GetGroups(int, int)
+M:API.Services.GroupService.UpdateGroup(System.Int32,System.String)|API/Services/GroupService/UpdateGroup().md|UpdateGroup(int, string)
+M:API.Services.GroupService.DeleteGroup(System.Int32)|API/Services/GroupService/DeleteGroup().md|DeleteGroup(int)
+M:API.Services.GroupService.GetGroupProficiency(System.Int32,System.Nullable{System.Int32},System.Collections.Generic.List{System.Int32})|API/Services/GroupService/GetGroupProficiency().md|GetGroupProficiency(int, Nullable<int>, List<int>)
+M:API.Services.GroupService.GetScore(System.Int32,System.Int32)|API/Services/GroupService/GetScore().md|GetScore(int, int)
+T:API.Services.GroupService|API/Services/GroupService/index.md|GroupService
+M:API.Services.IItemPicker.PickItems(System.Collections.Generic.ICollection{Models.Item})|API/Services/IItemPicker/PickItems().md|PickItems(ICollection<Item>)
+T:API.Services.IItemPicker|API/Services/IItemPicker/index.md|IItemPicker
+M:API.Services.BaseItemPicker.SetNext(API.Services.BaseItemPicker)|API/Services/BaseItemPicker/SetNext().md|SetNext(BaseItemPicker)
+M:API.Services.BaseItemPicker.PickItems(System.Collections.Generic.ICollection{Models.Item})|API/Services/BaseItemPicker/PickItems().md|PickItems(ICollection<Item>)
+T:API.Services.BaseItemPicker|API/Services/BaseItemPicker/index.md|BaseItemPicker
+M:API.Services.PickNItems.#ctor(System.Int32,System.Func{Models.Item,System.Boolean})|API/Services/PickNItems/index.md#API.Services.PickNItems.PickNItems()|PickNItems(int, Func<Item,bool>)
+M:API.Services.PickNItems.PickItems(System.Collections.Generic.ICollection{Models.Item})|API/Services/PickNItems/PickItems().md|PickItems(ICollection<Item>)
+T:API.Services.PickNItems|API/Services/PickNItems/index.md|PickNItems
+M:API.Services.NonGeneratedItemPicker.#ctor(System.Int32)|API/Services/NonGeneratedItemPicker/index.md#API.Services.NonGeneratedItemPicker.NonGeneratedItemPicker()|NonGeneratedItemPicker(int)
+T:API.Services.NonGeneratedItemPicker|API/Services/NonGeneratedItemPicker/index.md|NonGeneratedItemPicker
+M:API.Services.AiGeneratedItemPicker.#ctor(System.Int32)|API/Services/AiGeneratedItemPicker/index.md#API.Services.AiGeneratedItemPicker.AiGeneratedItemPicker()|AiGeneratedItemPicker(int)
+T:API.Services.AiGeneratedItemPicker|API/Services/AiGeneratedItemPicker/index.md|AiGeneratedItemPicker
+M:API.Services.IItemPoolService.GenerateItemsTillThreshold(System.Int32)|API/Services/IItemPoolService/GenerateItemsTillThreshold().md|GenerateItemsTillThreshold(int)
+T:API.Services.IItemPoolService|API/Services/IItemPoolService/index.md|IItemPoolService
+M:API.Services.ItemPoolService.#ctor(Models.AppDbContext,API.Services.IAIService,API.Services.IItemService,Microsoft.Extensions.Logging.ILogger{API.Services.ItemPoolService})|API/Services/ItemPoolService/index.md#API.Services.ItemPoolService.ItemPoolService()|ItemPoolService(AppDbContext, IAIService, IItemService, ILogger<ItemPoolService>)
+M:API.Services.ItemPoolService.GenerateItemsTillThreshold(System.Int32)|API/Services/ItemPoolService/GenerateItemsTillThreshold().md|GenerateItemsTillThreshold(int)
+T:API.Services.ItemPoolService|API/Services/ItemPoolService/index.md|ItemPoolService
+M:API.Services.IItemService.VerifyItemExists(System.Int32)|API/Services/IItemService/VerifyItemExists().md|VerifyItemExists(int)
+M:API.Services.IItemService.GetItem(System.Int32,System.Boolean)|API/Services/IItemService/GetItem().md|GetItem(int, bool)
+M:API.Services.IItemService.GetItems(System.Int32,System.Int32,System.Int32)|API/Services/IItemService/GetItems().md|GetItems(int, int, int)
+M:API.Services.IItemService.GetItemsForAssessment(System.Int32[])|API/Services/IItemService/GetItemsForAssessment().md|GetItemsForAssessment(int[])
+M:API.Services.IItemService.NotRecentlySeenItems(System.Int32)|API/Services/IItemService/NotRecentlySeenItems().md|NotRecentlySeenItems(int)
+M:API.Services.IItemService.GetItemByAnswertext(System.String,System.Int32)|API/Services/IItemService/GetItemByAnswertext().md|GetItemByAnswertext(string, int)
+M:API.Services.IItemService.UpdateItem(Models.Item)|API/Services/IItemService/UpdateItem().md|UpdateItem(Item)
+M:API.Services.IItemService.ActivateItem(System.Int32)|API/Services/IItemService/ActivateItem().md|ActivateItem(int)
+M:API.Services.IItemService.DeactivateItem(System.Int32)|API/Services/IItemService/DeactivateItem().md|DeactivateItem(int)
+T:API.Services.IItemService|API/Services/IItemService/index.md|IItemService
+M:API.Services.ItemService.#ctor(Models.AppDbContext,API.Services.IDomainService)|API/Services/ItemService/index.md#API.Services.ItemService.ItemService()|ItemService(AppDbContext, IDomainService)
+M:API.Services.ItemService.VerifyItemExists(System.Int32)|API/Services/ItemService/VerifyItemExists().md|VerifyItemExists(int)
+M:API.Services.ItemService.GetItem(System.Int32,System.Boolean)|API/Services/ItemService/GetItem().md|GetItem(int, bool)
+M:API.Services.ItemService.GetItems(System.Int32,System.Int32,System.Int32)|API/Services/ItemService/GetItems().md|GetItems(int, int, int)
+M:API.Services.ItemService.GetItemsForAssessment(System.Int32[])|API/Services/ItemService/GetItemsForAssessment().md|GetItemsForAssessment(int[])
+M:API.Services.ItemService.NotRecentlySeenItems(System.Int32)|API/Services/ItemService/NotRecentlySeenItems().md|NotRecentlySeenItems(int)
+M:API.Services.ItemService.GetItemByAnswertext(System.String,System.Int32)|API/Services/ItemService/GetItemByAnswertext().md|GetItemByAnswertext(string, int)
+M:API.Services.ItemService.UpdateItem(Models.Item)|API/Services/ItemService/UpdateItem().md|UpdateItem(Item)
+M:API.Services.ItemService.ActivateItem(System.Int32)|API/Services/ItemService/ActivateItem().md|ActivateItem(int)
+M:API.Services.ItemService.DeactivateItem(System.Int32)|API/Services/ItemService/DeactivateItem().md|DeactivateItem(int)
+T:API.Services.ItemService|API/Services/ItemService/index.md|ItemService
+M:API.Services.ILevelService.GetRandomLevel(System.Int32,System.Int32,System.Int32[])|API/Services/ILevelService/GetRandomLevel().md|GetRandomLevel(int, int, int[])
+M:API.Services.ILevelService.GenerateRandom(System.Int32,Models.User,System.Collections.Generic.ICollection{System.Int32})|API/Services/ILevelService/GenerateRandom().md|GenerateRandom(int, User, ICollection<int>)
+M:API.Services.ILevelService.UpdateUserAnswer(Models.UserAnswerRequest)|API/Services/ILevelService/UpdateUserAnswer().md|UpdateUserAnswer(UserAnswerRequest)
+M:API.Services.ILevelService.SubmitLevel(Models.LevelAnswerRequest,Microsoft.Extensions.Logging.ILogger)|API/Services/ILevelService/SubmitLevel().md|SubmitLevel(LevelAnswerRequest, ILogger)
+M:API.Services.ILevelService.GrantLevelRewards(Models.LevelResult,System.Int32,System.Int32,System.Int32)|API/Services/ILevelService/GrantLevelRewards().md|GrantLevelRewards(LevelResult, int, int, int)
+T:API.Services.ILevelService|API/Services/ILevelService/index.md|ILevelService
+M:API.Services.LevelService.#ctor(Models.AppDbContext,API.Services.IItemPoolService,API.Services.IDomainService,API.Services.IItemService,API.Handlers.LevelHandler,API.Services.IUserCurrencyService,AA.IAlgorithmFactory{AA.UserProficiencyAlgorithm.IUserProficiencyAlgorithm})|API/Services/LevelService/index.md#API.Services.LevelService.LevelService()|LevelService(AppDbContext, IItemPoolService, IDomainService, IItemService, LevelHandler, IUserCurrencyService, IAlgorithmFactory<IUserProficiencyAlgorithm>)
+M:API.Services.LevelService.GetRandomLevel(System.Int32,System.Int32,System.Int32[])|API/Services/LevelService/GetRandomLevel().md|GetRandomLevel(int, int, int[])
+M:API.Services.LevelService.GenerateRandom(System.Int32,Models.User,System.Collections.Generic.ICollection{System.Int32})|API/Services/LevelService/GenerateRandom().md|GenerateRandom(int, User, ICollection<int>)
+M:API.Services.LevelService.UpdateUserAnswer(Models.UserAnswerRequest)|API/Services/LevelService/UpdateUserAnswer().md|UpdateUserAnswer(UserAnswerRequest)
+M:API.Services.LevelService.SubmitLevel(Models.LevelAnswerRequest,Microsoft.Extensions.Logging.ILogger)|API/Services/LevelService/SubmitLevel().md|SubmitLevel(LevelAnswerRequest, ILogger)
+M:API.Services.LevelService.GrantLevelRewards(Models.LevelResult,System.Int32,System.Int32,System.Int32)|API/Services/LevelService/GrantLevelRewards().md|GrantLevelRewards(LevelResult, int, int, int)
+T:API.Services.LevelService|API/Services/LevelService/index.md|LevelService
+M:API.Services.IReportService.CreateReport(System.Int32,Models.ItemError)|API/Services/IReportService/CreateReport().md|CreateReport(int, ItemError)
+T:API.Services.IReportService|API/Services/IReportService/index.md|IReportService
+M:API.Services.ReportService.#ctor(Models.AppDbContext,API.Services.IItemService,API.Handlers.ReportHandler)|API/Services/ReportService/index.md#API.Services.ReportService.ReportService()|ReportService(AppDbContext, IItemService, ReportHandler)
+M:API.Services.ReportService.CreateReport(System.Int32,Models.ItemError)|API/Services/ReportService/CreateReport().md|CreateReport(int, ItemError)
+T:API.Services.ReportService|API/Services/ReportService/index.md|ReportService
+P:API.Services.SettingsService.ActiveSetting|API/Services/SettingsService/index.md#API.Services.SettingsService.ActiveSetting|ActiveSetting
+M:API.Services.SettingsService.#ctor(Models.AppDbContext,Microsoft.Extensions.Caching.Memory.IMemoryCache)|API/Services/SettingsService/index.md#API.Services.SettingsService.SettingsService()|SettingsService(AppDbContext, IMemoryCache)
+M:API.Services.SettingsService.UpdateFromSetting(Models.Setting)|API/Services/SettingsService/UpdateFromSetting().md|UpdateFromSetting(Setting)
+M:API.Services.SettingsService.AddSetting(Models.Setting)|API/Services/SettingsService/AddSetting().md|AddSetting(Setting)
+M:API.Services.SettingsService.GetSettings(System.Int32,System.Int32)|API/Services/SettingsService/GetSettings().md|GetSettings(int, int)
+M:API.Services.SettingsService.GetSetting(System.Int32)|API/Services/SettingsService/GetSetting().md|GetSetting(int)
+M:API.Services.SettingsService.Validate(API.Controllers.DTOs.SettingDto)|API/Services/SettingsService/Validate().md|Validate(SettingDto)
+T:API.Services.SettingsService|API/Services/SettingsService/index.md|SettingsService
+M:API.Services.IUserService.VerifyUserExists(System.Int32)|API/Services/IUserService/VerifyUserExists().md|VerifyUserExists(int)
+M:API.Services.IUserService.GetUser(System.Int32)|API/Services/IUserService/GetUser().md|GetUser(int)
+M:API.Services.IUserService.GetUsers(System.Int32,System.Int32)|API/Services/IUserService/GetUsers().md|GetUsers(int, int)
+M:API.Services.IUserService.GetUserRole(Models.User)|API/Services/IUserService/GetUserRole().md|GetUserRole(User)
+M:API.Services.IUserService.CreateUser(Models.UserCreateRecord)|API/Services/IUserService/CreateUser().md|CreateUser(UserCreateRecord)
+M:API.Services.IUserService.UpdateUser(System.Int32,Models.UserCreateRecord)|API/Services/IUserService/UpdateUser().md|UpdateUser(int, UserCreateRecord)
+M:API.Services.IUserService.DeleteUser(System.Int32)|API/Services/IUserService/DeleteUser().md|DeleteUser(int)
+M:API.Services.IUserService.AddClaimAsync(Models.User,System.String,System.String)|API/Services/IUserService/AddClaimAsync().md|AddClaimAsync(User, string, string)
+T:API.Services.IUserService|API/Services/IUserService/index.md|IUserService
+M:API.Services.UserService.#ctor(Models.AppDbContext,Microsoft.AspNetCore.Identity.UserManager{Models.User},Microsoft.AspNetCore.Identity.RoleManager{Models.ApplicationRole},API.Handlers.UserHandler,API.Services.ICurrencyService,API.Handlers.UserCurrencyHandler,API.Services.ICosmeticService,API.Handlers.UserCosmeticHandler,API.Services.IDomainService)|API/Services/UserService/index.md#API.Services.UserService.UserService()|UserService(AppDbContext, UserManager<User>, RoleManager<ApplicationRole>, UserHandler, ICurrencyService, UserCurrencyHandler, ICosmeticService, UserCosmeticHandler, IDomainService)
+M:API.Services.UserService.VerifyUserExists(System.Int32)|API/Services/UserService/VerifyUserExists().md|VerifyUserExists(int)
+M:API.Services.UserService.GetUser(System.Int32)|API/Services/UserService/GetUser().md|GetUser(int)
+M:API.Services.UserService.GetUsers(System.Int32,System.Int32)|API/Services/UserService/GetUsers().md|GetUsers(int, int)
+M:API.Services.UserService.GetUserRole(Models.User)|API/Services/UserService/GetUserRole().md|GetUserRole(User)
+M:API.Services.UserService.CreateUser(Models.UserCreateRecord)|API/Services/UserService/CreateUser().md|CreateUser(UserCreateRecord)
+M:API.Services.UserService.UpdateUser(System.Int32,Models.UserCreateRecord)|API/Services/UserService/UpdateUser().md|UpdateUser(int, UserCreateRecord)
+M:API.Services.UserService.DeleteUser(System.Int32)|API/Services/UserService/DeleteUser().md|DeleteUser(int)
+M:API.Services.UserService.AddClaimAsync(Models.User,System.String,System.String)|API/Services/UserService/AddClaimAsync().md|AddClaimAsync(User, string, string)
+T:API.Services.UserService|API/Services/UserService/index.md|UserService
+M:API.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)|API/Migrations/InitialCreate/Up().md|Up(MigrationBuilder)
+M:API.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)|API/Migrations/InitialCreate/Down().md|Down(MigrationBuilder)
+M:API.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)|API/Migrations/InitialCreate/BuildTargetModel().md|BuildTargetModel(ModelBuilder)
+N:API.Migrations|index.md#API.Migrations|API.Migrations
+T:API.Migrations.InitialCreate|API/Migrations/InitialCreate/index.md|InitialCreate
+M:API.Migrations.LevelSizeSetting.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)|API/Migrations/LevelSizeSetting/Up().md|Up(MigrationBuilder)
+M:API.Migrations.LevelSizeSetting.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)|API/Migrations/LevelSizeSetting/Down().md|Down(MigrationBuilder)
+M:API.Migrations.LevelSizeSetting.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)|API/Migrations/LevelSizeSetting/BuildTargetModel().md|BuildTargetModel(ModelBuilder)
+T:API.Migrations.LevelSizeSetting|API/Migrations/LevelSizeSetting/index.md|LevelSizeSetting
+M:API.Migrations.AddUserProficiencyMastered.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)|API/Migrations/AddUserProficiencyMastered/Up().md|Up(MigrationBuilder)
+M:API.Migrations.AddUserProficiencyMastered.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)|API/Migrations/AddUserProficiencyMastered/Down().md|Down(MigrationBuilder)
+M:API.Migrations.AddUserProficiencyMastered.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)|API/Migrations/AddUserProficiencyMastered/BuildTargetModel().md|BuildTargetModel(ModelBuilder)
+T:API.Migrations.AddUserProficiencyMastered|API/Migrations/AddUserProficiencyMastered/index.md|AddUserProficiencyMastered
+M:API.Handlers.AiHandler.ValidateAiJson(System.String,Newtonsoft.Json.Schema.JSchema)|API/Handlers/AiHandler/ValidateAiJson().md|ValidateAiJson(string, JSchema)
+M:API.Handlers.AiHandler.AiQuestion(System.String,System.String)|API/Handlers/AiHandler/AiQuestion().md|AiQuestion(string, string)
+M:API.Handlers.AiHandler.ParseFromJson(Newtonsoft.Json.Linq.JToken)|API/Handlers/AiHandler/ParseFromJson().md|ParseFromJson(JToken)
+M:API.Handlers.AiHandler.AiFeedback(System.Collections.Generic.List{System.Tuple{System.String,System.String,System.String,System.String}},System.String,System.String)|API/Handlers/AiHandler/AiFeedback().md|AiFeedback(List<Tuple<string,string,string,string>>, string, string)
+M:API.Handlers.AiHandler.FormatAiFeedback(Newtonsoft.Json.Linq.JToken)|API/Handlers/AiHandler/FormatAiFeedback().md|FormatAiFeedback(JToken)
+N:API.Handlers|index.md#API.Handlers|API.Handlers
+T:API.Handlers.AiHandler|API/Handlers/AiHandler/index.md|AiHandler
+M:API.Handlers.UserCosmeticHandler.NewUserCos(Models.User,Models.Cosmetic)|API/Handlers/UserCosmeticHandler/NewUserCos().md|NewUserCos(User, Cosmetic)
+M:API.Handlers.UserCosmeticHandler.EquipCosmetic(Models.UserCosmetic,System.Collections.Generic.IEnumerable{Models.UserCosmetic},System.Boolean)|API/Handlers/UserCosmeticHandler/EquipCosmetic().md|EquipCosmetic(UserCosmetic, IEnumerable<UserCosmetic>, bool)
+M:API.Handlers.UserCosmeticHandler.PrepareForDeletion(Models.UserCosmetic)|API/Handlers/UserCosmeticHandler/PrepareForDeletion().md|PrepareForDeletion(UserCosmetic)
+T:API.Handlers.UserCosmeticHandler|API/Handlers/UserCosmeticHandler/index.md|UserCosmeticHandler
+M:API.Handlers.UserCurrencyHandler.NewUserCur(Models.User,Models.Currency)|API/Handlers/UserCurrencyHandler/NewUserCur().md|NewUserCur(User, Currency)
+M:API.Handlers.UserCurrencyHandler.UpdateCurrency(Models.UserCurrency,System.Int32)|API/Handlers/UserCurrencyHandler/UpdateCurrency().md|UpdateCurrency(UserCurrency, int)
+T:API.Handlers.UserCurrencyHandler|API/Handlers/UserCurrencyHandler/index.md|UserCurrencyHandler
+M:API.Handlers.DomainHandler.GetDefaultProficiencies(System.Int32,System.Int32[])|API/Handlers/DomainHandler/GetDefaultProficiencies().md|GetDefaultProficiencies(int, int[])
+T:API.Handlers.DomainHandler|API/Handlers/DomainHandler/index.md|DomainHandler
+M:API.Handlers.IGroupHandler.ValidateGroupName(System.String)|API/Handlers/IGroupHandler/ValidateGroupName().md|ValidateGroupName(string)
+M:API.Handlers.IGroupHandler.ValidateAddMember(System.Boolean,System.Boolean,System.Boolean)|API/Handlers/IGroupHandler/ValidateAddMember().md|ValidateAddMember(bool, bool, bool)
+T:API.Handlers.IGroupHandler|API/Handlers/IGroupHandler/index.md|IGroupHandler
+M:API.Handlers.GroupHandler.ValidateGroupName(System.String)|API/Handlers/GroupHandler/ValidateGroupName().md|ValidateGroupName(string)
+M:API.Handlers.GroupHandler.ValidateAddMember(System.Boolean,System.Boolean,System.Boolean)|API/Handlers/GroupHandler/ValidateAddMember().md|ValidateAddMember(bool, bool, bool)
+T:API.Handlers.GroupHandler|API/Handlers/GroupHandler/index.md|GroupHandler
+M:API.Handlers.LevelHandler.CalcProficiencyGain(System.Boolean,System.Decimal,System.Decimal)|API/Handlers/LevelHandler/CalcProficiencyGain().md|CalcProficiencyGain(bool, decimal, decimal)
+T:API.Handlers.LevelHandler|API/Handlers/LevelHandler/index.md|LevelHandler
+M:API.Handlers.ReportHandler.CreateReportForDb(System.Int32,Models.ItemError)|API/Handlers/ReportHandler/CreateReportForDb().md|CreateReportForDb(int, ItemError)
+T:API.Handlers.ReportHandler|API/Handlers/ReportHandler/index.md|ReportHandler
+M:API.Handlers.UserHandler.CreateUserFromRecord(Models.UserCreateRecord)|API/Handlers/UserHandler/CreateUserFromRecord().md|CreateUserFromRecord(UserCreateRecord)
+M:API.Handlers.UserHandler.UpdateUserFromRecord(Models.User,Models.UserCreateRecord)|API/Handlers/UserHandler/UpdateUserFromRecord().md|UpdateUserFromRecord(User, UserCreateRecord)
+T:API.Handlers.UserHandler|API/Handlers/UserHandler/index.md|UserHandler
+M:API.Controllers.AIController.#ctor(API.Services.IAIService)|API/Controllers/AIController/index.md#API.Controllers.AIController.AIController()|AIController(IAIService)
+M:API.Controllers.AIController.MakeQuestion(System.Int32)|API/Controllers/AIController/MakeQuestion().md|MakeQuestion(int)
+M:API.Controllers.AIController.MakeQuestionWithId(System.Int32)|API/Controllers/AIController/MakeQuestionWithId().md|MakeQuestionWithId(int)
+M:API.Controllers.AIController.CreateFeedBack(System.Int32)|API/Controllers/AIController/CreateFeedBack().md|CreateFeedBack(int)
+N:API.Controllers|index.md#API.Controllers|API.Controllers
+T:API.Controllers.AIController|API/Controllers/AIController/index.md|AIController
+M:API.Controllers.AuthController.#ctor(API.Services.IAuthService)|API/Controllers/AuthController/index.md#API.Controllers.AuthController.AuthController()|AuthController(IAuthService)
+M:API.Controllers.AuthController.Register(API.Controllers.DTOs.UserCreateDto)|API/Controllers/AuthController/Register().md|Register(UserCreateDto)
+M:API.Controllers.AuthController.Login(API.Controllers.DTOs.LoginRequestDto,System.Boolean)|API/Controllers/AuthController/Login().md|Login(LoginRequestDto, bool)
+M:API.Controllers.AuthController.Logout|API/Controllers/AuthController/Logout().md|Logout()
+M:API.Controllers.AuthController.PingAuth|API/Controllers/AuthController/PingAuth().md|PingAuth()
+T:API.Controllers.AuthController|API/Controllers/AuthController/index.md|AuthController
+M:API.Controllers.CosmeticController.#ctor(API.Services.ICosmeticService,API.Services.IUserCosmeticService)|API/Controllers/CosmeticController/index.md#API.Controllers.CosmeticController.CosmeticController()|CosmeticController(ICosmeticService, IUserCosmeticService)
+M:API.Controllers.CosmeticController.GetCosmetics(System.String)|API/Controllers/CosmeticController/GetCosmetics().md|GetCosmetics(string)
+M:API.Controllers.CosmeticController.GetUserCosmetics(System.Nullable{System.Boolean},System.String,System.Nullable{System.Int32})|API/Controllers/CosmeticController/GetUserCosmetics().md|GetUserCosmetics(Nullable<bool>, string, Nullable<int>)
+M:API.Controllers.CosmeticController.BuyUserCosmetic(API.Controllers.DTOs.UserCosmeticDto)|API/Controllers/CosmeticController/BuyUserCosmetic().md|BuyUserCosmetic(UserCosmeticDto)
+M:API.Controllers.CosmeticController.EquipUserCosmetic(API.Controllers.DTOs.UserCosmeticDto)|API/Controllers/CosmeticController/EquipUserCosmetic().md|EquipUserCosmetic(UserCosmeticDto)
+M:API.Controllers.CosmeticController.SellUserCosmetic(API.Controllers.DTOs.UserCosmeticDto)|API/Controllers/CosmeticController/SellUserCosmetic().md|SellUserCosmetic(UserCosmeticDto)
+T:API.Controllers.CosmeticController|API/Controllers/CosmeticController/index.md|CosmeticController
+M:API.Controllers.CurrencyController.#ctor(API.Services.ICurrencyService,API.Services.IUserCurrencyService)|API/Controllers/CurrencyController/index.md#API.Controllers.CurrencyController.CurrencyController()|CurrencyController(ICurrencyService, IUserCurrencyService)
+M:API.Controllers.CurrencyController.GetCurrencies|API/Controllers/CurrencyController/GetCurrencies().md|GetCurrencies()
+M:API.Controllers.CurrencyController.GetCurrency(System.Int32)|API/Controllers/CurrencyController/GetCurrency().md|GetCurrency(int)
+M:API.Controllers.CurrencyController.GetUserCurrencies(System.Nullable{System.Int32})|API/Controllers/CurrencyController/GetUserCurrencies().md|GetUserCurrencies(Nullable<int>)
+M:API.Controllers.CurrencyController.UpdateUserCurrency(API.Controllers.DTOs.UserCurrencyUpdateDto,System.Nullable{System.Int32})|API/Controllers/CurrencyController/UpdateUserCurrency().md|UpdateUserCurrency(UserCurrencyUpdateDto, Nullable<int>)
+T:API.Controllers.CurrencyController|API/Controllers/CurrencyController/index.md|CurrencyController
+M:API.Controllers.DomainController.#ctor(API.Services.IDomainService)|API/Controllers/DomainController/index.md#API.Controllers.DomainController.DomainController()|DomainController(IDomainService)
+M:API.Controllers.DomainController.GetDomains|API/Controllers/DomainController/GetDomains().md|GetDomains()
+M:API.Controllers.DomainController.GetUserDomains|API/Controllers/DomainController/GetUserDomains().md|GetUserDomains()
+M:API.Controllers.DomainController.UpdateUserProficiency(System.Int32,System.Nullable{System.Int32})|API/Controllers/DomainController/UpdateUserProficiency().md|UpdateUserProficiency(int, Nullable<int>)
+T:API.Controllers.DomainController|API/Controllers/DomainController/index.md|DomainController
+M:API.Controllers.GroupsController.#ctor(API.Services.IGroupService)|API/Controllers/GroupsController/index.md#API.Controllers.GroupsController.GroupsController()|GroupsController(IGroupService)
+M:API.Controllers.GroupsController.CreateGroup(API.Controllers.DTOs.CreateGroupDto)|API/Controllers/GroupsController/CreateGroup().md|CreateGroup(CreateGroupDto)
+M:API.Controllers.GroupsController.GetGroup(System.Int32)|API/Controllers/GroupsController/GetGroup().md|GetGroup(int)
+M:API.Controllers.GroupsController.AddMember(System.Int32,System.Int32)|API/Controllers/GroupsController/AddMember().md|AddMember(int, int)
+M:API.Controllers.GroupsController.RemoveMember(System.Int32,System.Int32)|API/Controllers/GroupsController/RemoveMember().md|RemoveMember(int, int)
+M:API.Controllers.GroupsController.GetGroups(System.Int32,System.Int32)|API/Controllers/GroupsController/GetGroups().md|GetGroups(int, int)
+M:API.Controllers.GroupsController.UpdateGroup(System.Int32,API.Controllers.DTOs.UpdateGroupDto)|API/Controllers/GroupsController/UpdateGroup().md|UpdateGroup(int, UpdateGroupDto)
+M:API.Controllers.GroupsController.DeleteGroup(System.Int32)|API/Controllers/GroupsController/DeleteGroup().md|DeleteGroup(int)
+M:API.Controllers.GroupsController.GetGroupProficiency(System.Int32,System.Nullable{System.Int32},System.Collections.Generic.List{System.Int32})|API/Controllers/GroupsController/GetGroupProficiency().md|GetGroupProficiency(int, Nullable<int>, List<int>)
+M:API.Controllers.GroupsController.GetScore(System.Int32,System.Int32)|API/Controllers/GroupsController/GetScore().md|GetScore(int, int)
+T:API.Controllers.GroupsController|API/Controllers/GroupsController/index.md|GroupsController
+M:API.Controllers.ItemController.#ctor(API.Services.IItemService)|API/Controllers/ItemController/index.md#API.Controllers.ItemController.ItemController()|ItemController(IItemService)
+M:API.Controllers.ItemController.GetItems(System.Int32,System.Int32)|API/Controllers/ItemController/GetItems().md|GetItems(int, int)
+M:API.Controllers.ItemController.GetItem(System.Int32)|API/Controllers/ItemController/GetItem().md|GetItem(int)
+M:API.Controllers.ItemController.UpdateItem(API.Controllers.DTOs.ItemDto)|API/Controllers/ItemController/UpdateItem().md|UpdateItem(ItemDto)
+M:API.Controllers.ItemController.SearchByQuestionText(System.String)|API/Controllers/ItemController/SearchByQuestionText().md|SearchByQuestionText(string)
+M:API.Controllers.ItemController.DeactivateItem(System.Int32)|API/Controllers/ItemController/DeactivateItem().md|DeactivateItem(int)
+M:API.Controllers.ItemController.ReactivateItem(System.Int32)|API/Controllers/ItemController/ReactivateItem().md|ReactivateItem(int)
+T:API.Controllers.ItemController|API/Controllers/ItemController/index.md|ItemController
+M:API.Controllers.LevelController.#ctor(API.Services.ILevelService,Microsoft.Extensions.Logging.ILogger{API.Controllers.LevelController})|API/Controllers/LevelController/index.md#API.Controllers.LevelController.LevelController()|LevelController(ILevelService, ILogger<LevelController>)
+M:API.Controllers.LevelController.GetRandomLevel(System.Int32,System.Int32[])|API/Controllers/LevelController/GetRandomLevel().md|GetRandomLevel(int, int[])
+M:API.Controllers.LevelController.SubmitAnswer(API.Controllers.DTOs.UserAnswerRequestDto)|API/Controllers/LevelController/SubmitAnswer().md|SubmitAnswer(UserAnswerRequestDto)
+M:API.Controllers.LevelController.SubmitLevel(API.Controllers.DTOs.LevelAnswerRequestDto)|API/Controllers/LevelController/SubmitLevel().md|SubmitLevel(LevelAnswerRequestDto)
+T:API.Controllers.LevelController|API/Controllers/LevelController/index.md|LevelController
+M:API.Controllers.QTIController.#ctor(API.Services.IItemService)|API/Controllers/QTIController/index.md#API.Controllers.QTIController.QTIController()|QTIController(IItemService)
+M:API.Controllers.QTIController.GetItem(System.Int32)|API/Controllers/QTIController/GetItem().md|GetItem(int)
+M:API.Controllers.QTIController.GetAssessment(System.Int32[])|API/Controllers/QTIController/GetAssessment().md|GetAssessment(int[])
+T:API.Controllers.QTIController|API/Controllers/QTIController/index.md|QTIController
+M:API.Controllers.ReportController.#ctor(API.Services.IReportService)|API/Controllers/ReportController/index.md#API.Controllers.ReportController.ReportController()|ReportController(IReportService)
+M:API.Controllers.ReportController.CreateReport(API.Controllers.DTOs.ReportDto)|API/Controllers/ReportController/CreateReport().md|CreateReport(ReportDto)
+T:API.Controllers.ReportController|API/Controllers/ReportController/index.md|ReportController
+M:API.Controllers.SettingsController.#ctor(API.Services.SettingsService)|API/Controllers/SettingsController/index.md#API.Controllers.SettingsController.SettingsController()|SettingsController(SettingsService)
+M:API.Controllers.SettingsController.GetActiveSetting|API/Controllers/SettingsController/GetActiveSetting().md|GetActiveSetting()
+M:API.Controllers.SettingsController.ActivateSetting(System.Int32)|API/Controllers/SettingsController/ActivateSetting().md|ActivateSetting(int)
+M:API.Controllers.SettingsController.GetSettings(System.Int32,System.Int32)|API/Controllers/SettingsController/GetSettings().md|GetSettings(int, int)
+M:API.Controllers.SettingsController.CreateSetting(API.Controllers.DTOs.SettingDto)|API/Controllers/SettingsController/CreateSetting().md|CreateSetting(SettingDto)
+M:API.Controllers.SettingsController.UpdateSetting(API.Controllers.DTOs.SettingDto)|API/Controllers/SettingsController/UpdateSetting().md|UpdateSetting(SettingDto)
+T:API.Controllers.SettingsController|API/Controllers/SettingsController/index.md|SettingsController
+M:API.Controllers.UsersController.#ctor(API.Services.IUserService)|API/Controllers/UsersController/index.md#API.Controllers.UsersController.UsersController()|UsersController(IUserService)
+M:API.Controllers.UsersController.GetUser(System.Int32)|API/Controllers/UsersController/GetUser().md|GetUser(int)
+M:API.Controllers.UsersController.GetUsers(System.Int32,System.Int32)|API/Controllers/UsersController/GetUsers().md|GetUsers(int, int)
+M:API.Controllers.UsersController.UserIsAdmin|API/Controllers/UsersController/UserIsAdmin().md|UserIsAdmin()
+M:API.Controllers.UsersController.CreateUser(API.Controllers.DTOs.UserCreateDto)|API/Controllers/UsersController/CreateUser().md|CreateUser(UserCreateDto)
+M:API.Controllers.UsersController.UpdateUser(System.Int32,API.Controllers.DTOs.UserCreateDto)|API/Controllers/UsersController/UpdateUser().md|UpdateUser(int, UserCreateDto)
+M:API.Controllers.UsersController.DeleteUser(System.Int32)|API/Controllers/UsersController/DeleteUser().md|DeleteUser(int)
+T:API.Controllers.UsersController|API/Controllers/UsersController/index.md|UsersController
+P:API.Controllers.DTOs.CosmeticDto.Id|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.Id|Id
+P:API.Controllers.DTOs.CosmeticDto.Name|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.Name|Name
+P:API.Controllers.DTOs.CosmeticDto.Price|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.Price|Price
+P:API.Controllers.DTOs.CosmeticDto.CurrencyId|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.CurrencyId|CurrencyId
+P:API.Controllers.DTOs.CosmeticDto.ClothingType|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.ClothingType|ClothingType
+P:API.Controllers.DTOs.CosmeticDto.RiveFile|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.RiveFile|RiveFile
+P:API.Controllers.DTOs.CosmeticDto.RiveArtboard|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.RiveArtboard|RiveArtboard
+P:API.Controllers.DTOs.CosmeticDto.RiveStateMachine|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.RiveStateMachine|RiveStateMachine
+P:API.Controllers.DTOs.CosmeticDto.RiveInput|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.RiveInput|RiveInput
+P:API.Controllers.DTOs.CosmeticDto.RiveInputValue|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.RiveInputValue|RiveInputValue
+P:API.Controllers.DTOs.CosmeticDto.IconFile|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.IconFile|IconFile
+M:API.Controllers.DTOs.CosmeticDto.CreateCosmeticDto(Models.Cosmetic)|API/Controllers/DTOs/CosmeticDto/CreateCosmeticDto().md|CreateCosmeticDto(Cosmetic)
+M:API.Controllers.DTOs.CosmeticDto.#ctor|API/Controllers/DTOs/CosmeticDto/index.md#API.Controllers.DTOs.CosmeticDto.CosmeticDto()|CosmeticDto()
+N:API.Controllers.DTOs|index.md#API.Controllers.DTOs|API.Controllers.DTOs
+T:API.Controllers.DTOs.CosmeticDto|API/Controllers/DTOs/CosmeticDto/index.md|CosmeticDto
+P:API.Controllers.DTOs.UserCosmeticDto.UserId|API/Controllers/DTOs/UserCosmeticDto/index.md#API.Controllers.DTOs.UserCosmeticDto.UserId|UserId
+P:API.Controllers.DTOs.UserCosmeticDto.CosmeticId|API/Controllers/DTOs/UserCosmeticDto/index.md#API.Controllers.DTOs.UserCosmeticDto.CosmeticId|CosmeticId
+P:API.Controllers.DTOs.UserCosmeticDto.Equipped|API/Controllers/DTOs/UserCosmeticDto/index.md#API.Controllers.DTOs.UserCosmeticDto.Equipped|Equipped
+M:API.Controllers.DTOs.UserCosmeticDto.CreateUserCosmeticDto(Models.UserCosmetic)|API/Controllers/DTOs/UserCosmeticDto/CreateUserCosmeticDto().md|CreateUserCosmeticDto(UserCosmetic)
+M:API.Controllers.DTOs.UserCosmeticDto.#ctor|API/Controllers/DTOs/UserCosmeticDto/index.md#API.Controllers.DTOs.UserCosmeticDto.UserCosmeticDto()|UserCosmeticDto()
+T:API.Controllers.DTOs.UserCosmeticDto|API/Controllers/DTOs/UserCosmeticDto/index.md|UserCosmeticDto
+P:API.Controllers.DTOs.CurrencyDto.Id|API/Controllers/DTOs/CurrencyDto/index.md#API.Controllers.DTOs.CurrencyDto.Id|Id
+P:API.Controllers.DTOs.CurrencyDto.Name|API/Controllers/DTOs/CurrencyDto/index.md#API.Controllers.DTOs.CurrencyDto.Name|Name
+P:API.Controllers.DTOs.CurrencyDto.Sprite|API/Controllers/DTOs/CurrencyDto/index.md#API.Controllers.DTOs.CurrencyDto.Sprite|Sprite
+M:API.Controllers.DTOs.CurrencyDto.CreateCurrencyDto(Models.Currency)|API/Controllers/DTOs/CurrencyDto/CreateCurrencyDto().md|CreateCurrencyDto(Currency)
+M:API.Controllers.DTOs.CurrencyDto.#ctor|API/Controllers/DTOs/CurrencyDto/index.md#API.Controllers.DTOs.CurrencyDto.CurrencyDto()|CurrencyDto()
+T:API.Controllers.DTOs.CurrencyDto|API/Controllers/DTOs/CurrencyDto/index.md|CurrencyDto
+P:API.Controllers.DTOs.UserCurrencyDto.UserId|API/Controllers/DTOs/UserCurrencyDto/index.md#API.Controllers.DTOs.UserCurrencyDto.UserId|UserId
+P:API.Controllers.DTOs.UserCurrencyDto.CurrencyId|API/Controllers/DTOs/UserCurrencyDto/index.md#API.Controllers.DTOs.UserCurrencyDto.CurrencyId|CurrencyId
+P:API.Controllers.DTOs.UserCurrencyDto.Amount|API/Controllers/DTOs/UserCurrencyDto/index.md#API.Controllers.DTOs.UserCurrencyDto.Amount|Amount
+M:API.Controllers.DTOs.UserCurrencyDto.CreateUserCurrencyDto(Models.UserCurrency)|API/Controllers/DTOs/UserCurrencyDto/CreateUserCurrencyDto().md|CreateUserCurrencyDto(UserCurrency)
+M:API.Controllers.DTOs.UserCurrencyDto.#ctor|API/Controllers/DTOs/UserCurrencyDto/index.md#API.Controllers.DTOs.UserCurrencyDto.UserCurrencyDto()|UserCurrencyDto()
+T:API.Controllers.DTOs.UserCurrencyDto|API/Controllers/DTOs/UserCurrencyDto/index.md|UserCurrencyDto
+P:API.Controllers.DTOs.UserCurrencyUpdateDto.CurrencyId|API/Controllers/DTOs/UserCurrencyUpdateDto/index.md#API.Controllers.DTOs.UserCurrencyUpdateDto.CurrencyId|CurrencyId
+P:API.Controllers.DTOs.UserCurrencyUpdateDto.Amount|API/Controllers/DTOs/UserCurrencyUpdateDto/index.md#API.Controllers.DTOs.UserCurrencyUpdateDto.Amount|Amount
+M:API.Controllers.DTOs.UserCurrencyUpdateDto.#ctor|API/Controllers/DTOs/UserCurrencyUpdateDto/index.md#API.Controllers.DTOs.UserCurrencyUpdateDto.UserCurrencyUpdateDto()|UserCurrencyUpdateDto()
+T:API.Controllers.DTOs.UserCurrencyUpdateDto|API/Controllers/DTOs/UserCurrencyUpdateDto/index.md|UserCurrencyUpdateDto
+P:API.Controllers.DTOs.CreateGroupDto.Name|API/Controllers/DTOs/CreateGroupDto/index.md#API.Controllers.DTOs.CreateGroupDto.Name|Name
+M:API.Controllers.DTOs.CreateGroupDto.#ctor(System.String)|API/Controllers/DTOs/CreateGroupDto/index.md#API.Controllers.DTOs.CreateGroupDto.CreateGroupDto()|CreateGroupDto(string)
+T:API.Controllers.DTOs.CreateGroupDto|API/Controllers/DTOs/CreateGroupDto/index.md|CreateGroupDto
+P:API.Controllers.DTOs.UpdateGroupDto.Name|API/Controllers/DTOs/UpdateGroupDto/index.md#API.Controllers.DTOs.UpdateGroupDto.Name|Name
+M:API.Controllers.DTOs.UpdateGroupDto.#ctor(System.String)|API/Controllers/DTOs/UpdateGroupDto/index.md#API.Controllers.DTOs.UpdateGroupDto.UpdateGroupDto()|UpdateGroupDto(string)
+T:API.Controllers.DTOs.UpdateGroupDto|API/Controllers/DTOs/UpdateGroupDto/index.md|UpdateGroupDto
+P:API.Controllers.DTOs.ItemDto.Id|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.Id|Id
+P:API.Controllers.DTOs.ItemDto.Active|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.Active|Active
+P:API.Controllers.DTOs.ItemDto.Type|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.Type|Type
+P:API.Controllers.DTOs.ItemDto.Source|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.Source|Source
+P:API.Controllers.DTOs.ItemDto.Lang|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.Lang|Lang
+P:API.Controllers.DTOs.ItemDto.AnswerExplanation|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.AnswerExplanation|AnswerExplanation
+P:API.Controllers.DTOs.ItemDto.QuestionText|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.QuestionText|QuestionText
+P:API.Controllers.DTOs.ItemDto.AppearanceCount|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.AppearanceCount|AppearanceCount
+P:API.Controllers.DTOs.ItemDto.ResponseType|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.ResponseType|ResponseType
+P:API.Controllers.DTOs.ItemDto.Level|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.Level|Level
+P:API.Controllers.DTOs.ItemDto.Domains|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.Domains|Domains
+P:API.Controllers.DTOs.ItemDto.Answers|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.Answers|Answers
+M:API.Controllers.DTOs.ItemDto.CreateItemDto(Models.Item)|API/Controllers/DTOs/ItemDto/CreateItemDto().md|CreateItemDto(Item)
+M:API.Controllers.DTOs.ItemDto.FromItemDto(API.Controllers.DTOs.ItemDto)|API/Controllers/DTOs/ItemDto/FromItemDto().md|FromItemDto(ItemDto)
+M:API.Controllers.DTOs.ItemDto.#ctor|API/Controllers/DTOs/ItemDto/index.md#API.Controllers.DTOs.ItemDto.ItemDto()|ItemDto()
+T:API.Controllers.DTOs.ItemDto|API/Controllers/DTOs/ItemDto/index.md|ItemDto
+P:API.Controllers.DTOs.SmallItemDto.Id|API/Controllers/DTOs/SmallItemDto/index.md#API.Controllers.DTOs.SmallItemDto.Id|Id
+P:API.Controllers.DTOs.SmallItemDto.Active|API/Controllers/DTOs/SmallItemDto/index.md#API.Controllers.DTOs.SmallItemDto.Active|Active
+P:API.Controllers.DTOs.SmallItemDto.Type|API/Controllers/DTOs/SmallItemDto/index.md#API.Controllers.DTOs.SmallItemDto.Type|Type
+P:API.Controllers.DTOs.SmallItemDto.Source|API/Controllers/DTOs/SmallItemDto/index.md#API.Controllers.DTOs.SmallItemDto.Source|Source
+P:API.Controllers.DTOs.SmallItemDto.Lang|API/Controllers/DTOs/SmallItemDto/index.md#API.Controllers.DTOs.SmallItemDto.Lang|Lang
+P:API.Controllers.DTOs.SmallItemDto.AppearanceCount|API/Controllers/DTOs/SmallItemDto/index.md#API.Controllers.DTOs.SmallItemDto.AppearanceCount|AppearanceCount
+P:API.Controllers.DTOs.SmallItemDto.QuestionText|API/Controllers/DTOs/SmallItemDto/index.md#API.Controllers.DTOs.SmallItemDto.QuestionText|QuestionText
+P:API.Controllers.DTOs.SmallItemDto.ResponseType|API/Controllers/DTOs/SmallItemDto/index.md#API.Controllers.DTOs.SmallItemDto.ResponseType|ResponseType
+P:API.Controllers.DTOs.SmallItemDto.Level|API/Controllers/DTOs/SmallItemDto/index.md#API.Controllers.DTOs.SmallItemDto.Level|Level
+P:API.Controllers.DTOs.SmallItemDto.Domains|API/Controllers/DTOs/SmallItemDto/index.md#API.Controllers.DTOs.SmallItemDto.Domains|Domains
+M:API.Controllers.DTOs.SmallItemDto.CreateSmallItemDto(Models.Item)|API/Controllers/DTOs/SmallItemDto/CreateSmallItemDto().md|CreateSmallItemDto(Item)
+T:API.Controllers.DTOs.SmallItemDto|API/Controllers/DTOs/SmallItemDto/index.md|SmallItemDto
+P:API.Controllers.DTOs.DomainLabelDto.Id|API/Controllers/DTOs/DomainLabelDto/index.md#API.Controllers.DTOs.DomainLabelDto.Id|Id
+P:API.Controllers.DTOs.DomainLabelDto.Path|API/Controllers/DTOs/DomainLabelDto/index.md#API.Controllers.DTOs.DomainLabelDto.Path|Path
+T:API.Controllers.DTOs.DomainLabelDto|API/Controllers/DTOs/DomainLabelDto/index.md|DomainLabelDto
+P:API.Controllers.DTOs.UserAnswerRequestDto.ItemId|API/Controllers/DTOs/UserAnswerRequestDto/index.md#API.Controllers.DTOs.UserAnswerRequestDto.ItemId|ItemId
+P:API.Controllers.DTOs.UserAnswerRequestDto.LevelId|API/Controllers/DTOs/UserAnswerRequestDto/index.md#API.Controllers.DTOs.UserAnswerRequestDto.LevelId|LevelId
+P:API.Controllers.DTOs.UserAnswerRequestDto.Answer|API/Controllers/DTOs/UserAnswerRequestDto/index.md#API.Controllers.DTOs.UserAnswerRequestDto.Answer|Answer
+P:API.Controllers.DTOs.UserAnswerRequestDto.AnswerIdentifier|API/Controllers/DTOs/UserAnswerRequestDto/index.md#API.Controllers.DTOs.UserAnswerRequestDto.AnswerIdentifier|AnswerIdentifier
+P:API.Controllers.DTOs.UserAnswerRequestDto.Correct|API/Controllers/DTOs/UserAnswerRequestDto/index.md#API.Controllers.DTOs.UserAnswerRequestDto.Correct|Correct
+P:API.Controllers.DTOs.UserAnswerRequestDto.CompletionStatus|API/Controllers/DTOs/UserAnswerRequestDto/index.md#API.Controllers.DTOs.UserAnswerRequestDto.CompletionStatus|CompletionStatus
+M:API.Controllers.DTOs.UserAnswerRequestDto.CreateDto(Models.UserAnswerRequest)|API/Controllers/DTOs/UserAnswerRequestDto/CreateDto().md|CreateDto(UserAnswerRequest)
+M:API.Controllers.DTOs.UserAnswerRequestDto.FromDto(API.Controllers.DTOs.UserAnswerRequestDto)|API/Controllers/DTOs/UserAnswerRequestDto/FromDto().md|FromDto(UserAnswerRequestDto)
+M:API.Controllers.DTOs.UserAnswerRequestDto.#ctor|API/Controllers/DTOs/UserAnswerRequestDto/index.md#API.Controllers.DTOs.UserAnswerRequestDto.UserAnswerRequestDto()|UserAnswerRequestDto()
+T:API.Controllers.DTOs.UserAnswerRequestDto|API/Controllers/DTOs/UserAnswerRequestDto/index.md|UserAnswerRequestDto
+P:API.Controllers.DTOs.LevelResponseDto.AssessmentXml|API/Controllers/DTOs/LevelResponseDto/index.md#API.Controllers.DTOs.LevelResponseDto.AssessmentXml|AssessmentXml
+P:API.Controllers.DTOs.LevelResponseDto.LevelId|API/Controllers/DTOs/LevelResponseDto/index.md#API.Controllers.DTOs.LevelResponseDto.LevelId|LevelId
+P:API.Controllers.DTOs.LevelResponseDto.ItemIds|API/Controllers/DTOs/LevelResponseDto/index.md#API.Controllers.DTOs.LevelResponseDto.ItemIds|ItemIds
+M:API.Controllers.DTOs.LevelResponseDto.CreateDto(Models.LevelResponse)|API/Controllers/DTOs/LevelResponseDto/CreateDto().md|CreateDto(LevelResponse)
+M:API.Controllers.DTOs.LevelResponseDto.FromDto(API.Controllers.DTOs.LevelResponseDto)|API/Controllers/DTOs/LevelResponseDto/FromDto().md|FromDto(LevelResponseDto)
+M:API.Controllers.DTOs.LevelResponseDto.#ctor|API/Controllers/DTOs/LevelResponseDto/index.md#API.Controllers.DTOs.LevelResponseDto.LevelResponseDto()|LevelResponseDto()
+T:API.Controllers.DTOs.LevelResponseDto|API/Controllers/DTOs/LevelResponseDto/index.md|LevelResponseDto
+P:API.Controllers.DTOs.LevelAnswerRequestDto.LevelResultId|API/Controllers/DTOs/LevelAnswerRequestDto/index.md#API.Controllers.DTOs.LevelAnswerRequestDto.LevelResultId|LevelResultId
+P:API.Controllers.DTOs.LevelAnswerRequestDto.Answers|API/Controllers/DTOs/LevelAnswerRequestDto/index.md#API.Controllers.DTOs.LevelAnswerRequestDto.Answers|Answers
+M:API.Controllers.DTOs.LevelAnswerRequestDto.CreateDto(Models.LevelAnswerRequest)|API/Controllers/DTOs/LevelAnswerRequestDto/CreateDto().md|CreateDto(LevelAnswerRequest)
+M:API.Controllers.DTOs.LevelAnswerRequestDto.FromDto(API.Controllers.DTOs.LevelAnswerRequestDto)|API/Controllers/DTOs/LevelAnswerRequestDto/FromDto().md|FromDto(LevelAnswerRequestDto)
+M:API.Controllers.DTOs.LevelAnswerRequestDto.#ctor|API/Controllers/DTOs/LevelAnswerRequestDto/index.md#API.Controllers.DTOs.LevelAnswerRequestDto.LevelAnswerRequestDto()|LevelAnswerRequestDto()
+T:API.Controllers.DTOs.LevelAnswerRequestDto|API/Controllers/DTOs/LevelAnswerRequestDto/index.md|LevelAnswerRequestDto
+P:API.Controllers.DTOs.ReportDto.ItemId|API/Controllers/DTOs/ReportDto/index.md#API.Controllers.DTOs.ReportDto.ItemId|ItemId
+P:API.Controllers.DTOs.ReportDto.ItemError|API/Controllers/DTOs/ReportDto/index.md#API.Controllers.DTOs.ReportDto.ItemError|ItemError
+M:API.Controllers.DTOs.ReportDto.#ctor|API/Controllers/DTOs/ReportDto/index.md#API.Controllers.DTOs.ReportDto.ReportDto()|ReportDto()
+T:API.Controllers.DTOs.ReportDto|API/Controllers/DTOs/ReportDto/index.md|ReportDto
+P:API.Controllers.DTOs.SettingDto.Id|API/Controllers/DTOs/SettingDto/index.md#API.Controllers.DTOs.SettingDto.Id|Id
+P:API.Controllers.DTOs.SettingDto.ProfileName|API/Controllers/DTOs/SettingDto/index.md#API.Controllers.DTOs.SettingDto.ProfileName|ProfileName
+P:API.Controllers.DTOs.SettingDto.TimeBeforeRedo|API/Controllers/DTOs/SettingDto/index.md#API.Controllers.DTOs.SettingDto.TimeBeforeRedo|TimeBeforeRedo
+P:API.Controllers.DTOs.SettingDto.LastActive|API/Controllers/DTOs/SettingDto/index.md#API.Controllers.DTOs.SettingDto.LastActive|LastActive
+P:API.Controllers.DTOs.SettingDto.LevelSize|API/Controllers/DTOs/SettingDto/index.md#API.Controllers.DTOs.SettingDto.LevelSize|LevelSize
+M:API.Controllers.DTOs.SettingDto.FromDto(API.Controllers.DTOs.SettingDto)|API/Controllers/DTOs/SettingDto/FromDto().md|FromDto(SettingDto)
+M:API.Controllers.DTOs.SettingDto.CreateDto(Models.Setting)|API/Controllers/DTOs/SettingDto/CreateDto().md|CreateDto(Setting)
+T:API.Controllers.DTOs.SettingDto|API/Controllers/DTOs/SettingDto/index.md|SettingDto
+P:API.Controllers.DTOs.UserDto.Id|API/Controllers/DTOs/UserDto/index.md#API.Controllers.DTOs.UserDto.Id|Id
+P:API.Controllers.DTOs.UserDto.Role|API/Controllers/DTOs/UserDto/index.md#API.Controllers.DTOs.UserDto.Role|Role
+P:API.Controllers.DTOs.UserDto.FirstName|API/Controllers/DTOs/UserDto/index.md#API.Controllers.DTOs.UserDto.FirstName|FirstName
+P:API.Controllers.DTOs.UserDto.Infix|API/Controllers/DTOs/UserDto/index.md#API.Controllers.DTOs.UserDto.Infix|Infix
+P:API.Controllers.DTOs.UserDto.LastName|API/Controllers/DTOs/UserDto/index.md#API.Controllers.DTOs.UserDto.LastName|LastName
+P:API.Controllers.DTOs.UserDto.DisplayName|API/Controllers/DTOs/UserDto/index.md#API.Controllers.DTOs.UserDto.DisplayName|DisplayName
+P:API.Controllers.DTOs.UserDto.Email|API/Controllers/DTOs/UserDto/index.md#API.Controllers.DTOs.UserDto.Email|Email
+M:API.Controllers.DTOs.UserDto.CreateUserDto(Models.User,System.String)|API/Controllers/DTOs/UserDto/CreateUserDto().md|CreateUserDto(User, string)
+T:API.Controllers.DTOs.UserDto|API/Controllers/DTOs/UserDto/index.md|UserDto
+P:API.Controllers.DTOs.UserCreateDto.Role|API/Controllers/DTOs/UserCreateDto/index.md#API.Controllers.DTOs.UserCreateDto.Role|Role
+P:API.Controllers.DTOs.UserCreateDto.FirstName|API/Controllers/DTOs/UserCreateDto/index.md#API.Controllers.DTOs.UserCreateDto.FirstName|FirstName
+P:API.Controllers.DTOs.UserCreateDto.Infix|API/Controllers/DTOs/UserCreateDto/index.md#API.Controllers.DTOs.UserCreateDto.Infix|Infix
+P:API.Controllers.DTOs.UserCreateDto.LastName|API/Controllers/DTOs/UserCreateDto/index.md#API.Controllers.DTOs.UserCreateDto.LastName|LastName
+P:API.Controllers.DTOs.UserCreateDto.DisplayName|API/Controllers/DTOs/UserCreateDto/index.md#API.Controllers.DTOs.UserCreateDto.DisplayName|DisplayName
+P:API.Controllers.DTOs.UserCreateDto.Password|API/Controllers/DTOs/UserCreateDto/index.md#API.Controllers.DTOs.UserCreateDto.Password|Password
+P:API.Controllers.DTOs.UserCreateDto.Email|API/Controllers/DTOs/UserCreateDto/index.md#API.Controllers.DTOs.UserCreateDto.Email|Email
+M:API.Controllers.DTOs.UserCreateDto.CreateRecordFromDto(API.Controllers.DTOs.UserCreateDto)|API/Controllers/DTOs/UserCreateDto/CreateRecordFromDto().md|CreateRecordFromDto(UserCreateDto)
+M:API.Controllers.DTOs.UserCreateDto.#ctor|API/Controllers/DTOs/UserCreateDto/index.md#API.Controllers.DTOs.UserCreateDto.UserCreateDto()|UserCreateDto()
+T:API.Controllers.DTOs.UserCreateDto|API/Controllers/DTOs/UserCreateDto/index.md|UserCreateDto
+P:API.Controllers.DTOs.LoginRequestDto.Email|API/Controllers/DTOs/LoginRequestDto/index.md#API.Controllers.DTOs.LoginRequestDto.Email|Email
+P:API.Controllers.DTOs.LoginRequestDto.Password|API/Controllers/DTOs/LoginRequestDto/index.md#API.Controllers.DTOs.LoginRequestDto.Password|Password
+T:API.Controllers.DTOs.LoginRequestDto|API/Controllers/DTOs/LoginRequestDto/index.md|LoginRequestDto

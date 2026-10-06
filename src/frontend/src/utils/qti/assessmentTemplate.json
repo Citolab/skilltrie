@@ -1,0 +1,18 @@
+{
+    "?xml": {
+        "@_version": "1.0",
+        "@_encoding": "UTF-8"
+    },
+    "qti-assessment-test": {
+        "@_identifier": "customassessment",
+        "@_title": "Custom Assessment",
+        "qti-test-part": {
+            "@_identifier": "P1",
+            "qti-assessment-section": {
+                "@_identifier": "S1",
+                "@_title": "Section 1",
+                "qti-assessment-item-ref": []
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+body.adminScrollbar ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+body.adminScrollbar ::-webkit-scrollbar-track {
+    background: rgba(16, 24, 40, 1);
+    border-radius: 0;
+}
+
+body.adminScrollbar ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+body.adminScrollbar ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+body.adminScrollbar ::-webkit-scrollbar-corner {
+    background: transparent;
+}

@@ -1,0 +1,2 @@
+# Future Features
+At the end of the project most of our MoSCoW had been implemented, therefore we discussed new MoSCoW has been discussed with the client. This MoSCoW was created with a future team in mind, probably you reading this. The full MoSCoW can be found in the `Handover and Vision for the Future` section of the final report. This is our MoSCoW, but many of these features are wanted by cito, but out of our scope.

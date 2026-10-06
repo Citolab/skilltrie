@@ -1,0 +1,8 @@
+# Management Advice
+Dear Chairmain, Product Owner, and Scrum Master of the next team,
+
+It seems that you will be taking up where we left off in the development of this product. To this end we, the previous management, would like to assist you to the best of our abilities. Therefore we have set up this, and a second page, dedicated to helping you get started as smoothly as possible, without ofcourse removing too much technical challenge for you.
+
+The very first and most important piece of advice we can give, is to plan out ahead when roughly you want to have what features implemented, and to share and consult with your artists about this. This was a major stumbling block throughout the project for us, as everyone, including but not limited to, our supervisor, the artists supervisor, our management, and our team members somewhat danced around the responsibility of our artist. By the end of the project it became clear to us that we *should* have sat down at the beginning with the artist, and create a long term planning, so that the artist can work within their own iterative process, and figure out what exactly Cito wants.
+
+Now it must be mentioned that if Cito acts to you anywhere close to how they did with us, they will quite often seem to go along with whatever you suggest. This was, in our case, not helped by our approach to scrum, where we did our personal retrospective and sprint planning before our client meeting, so that we had figured out why things went wrong the previous sprint, and planned ahead for the next by the time the meeting came around. We have asked them to be a little more assertive then in our time, but if all goes well i believe you will find that they are quite understanding of any issues that might arise.

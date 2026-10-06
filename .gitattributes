@@ -1,0 +1,2 @@
+# this is done so merge conflicts from differing version numbers dont happen on merge requests
+version.json merge=ours

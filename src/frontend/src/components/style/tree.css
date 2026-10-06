@@ -1,0 +1,83 @@
+/* 
+ * This program has been developed by students from the bachelor Computer Science at 
+ * Utrecht University within the Software Project course.
+ * © Copyright Utrecht University (Department of Information and Computing Sciences)
+ * Licensed under the MIT License. See the LICENSE file in the project root for details.
+ */
+@reference "../../index.css";
+
+/* This file contains styles specific to the tree component, including node and edge styling, as well as animations for edge flow and node status indications. 
+    It builds upon the general styles defined in index.css and adds specific classes and CSS variables for the tree visualization. */
+
+/* Node styling */
+/* NOTE: anything added here cannot be overridden by specific nodes*/
+.base-node {
+    @apply text-text-dark border-solid
+    rounded-2xl flex justify-center items-center text-center;
+}
+/* Status-based node border colors for suggested next topic */
+.base-node-border--suggested {
+    @apply ring-8 ring-primary-dark;
+}
+
+/* Handle styling */
+/* This class is used to hide the handle*/
+.react-flow__handle {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    min-width: 0;
+    min-height: 0;
+    border: none;
+}
+
+/* Edge styling */
+/* this needs to be in :root to be used as CSS variables for dynamic edge coloring based on node status and domain */
+:root {
+    /* tree background */
+    --color-surface-graph-default: var(--color-orange-100); /* Default background color */
+
+    /* edge colors */
+    --color-edge-default: var(--color-gray-400); /* Default edge color */
+
+    /* --- minimap --- */
+    --color-minimap-node-default: var(--color-gray-400); /* Fallback color for nodes with no domain */
+    --color-minimap-bg: var(--color-orange-100); /* Background color for minimap */
+    --color-minimap-mask: color-mix(in srgb, var(--color-stone-500) 60%, transparent); /* Mask color for minimap to indicate unexplored areas */
+
+    /* node colors per domain */
+    --color-domain-1-locked: var(--color-red-200);
+    --color-domain-1-locked-border: var(--color-red-100);
+    --color-domain-1-mastered: var(--color-red-400);
+    --color-domain-1-mastered-border: var(--color-red-500);
+    --color-domain-1-edge-locked: var(--color-red-200);
+    --color-domain-1-edge-mastered: var(--color-red-500);
+
+    --color-domain-2-locked: var(--color-blue-50);
+    --color-domain-2-locked-border: var(--color-blue-200);
+    --color-domain-2-mastered: var(--color-blue-400);
+    --color-domain-2-mastered-border: var(--color-blue-600);
+    --color-domain-2-edge-locked: var(--color-blue-200);
+    --color-domain-2-edge-mastered: var(--color-blue-500);
+
+    --color-domain-3-locked: var(--color-amber-50);
+    --color-domain-3-locked-border: var(--color-amber-200);
+    --color-domain-3-mastered: var(--color-amber-400);
+    --color-domain-3-mastered-border: var(--color-amber-500);
+    --color-domain-3-edge-locked: var(--color-amber-200);
+    --color-domain-3-edge-mastered: var(--color-amber-500);
+
+    --color-domain-4-locked: var(--color-green-50);
+    --color-domain-4-locked-border: var(--color-green-200);
+    --color-domain-4-mastered: var(--color-green-400);
+    --color-domain-4-mastered-border: var(--color-green-600);
+    --color-domain-4-edge-locked: var(--color-green-200);
+    --color-domain-4-edge-mastered: var(--color-green-500);
+}
+
+/* Edge animation for "bright" edges indicating suggested next topics based on node status */
+@keyframes edge-flow {
+    to {
+        stroke-dashoffset: -24;
+    }
+}

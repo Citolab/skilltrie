@@ -1,0 +1,40 @@
+{
+  "branches": ["dev"],
+  "plugins": [
+    ["@semantic-release/commit-analyzer", {
+      "preset": "conventionalcommits",
+      "parserOpts": {
+        "noteKeywords": ["BREAKING CHANGE", "BREAKING-CHANGE"],
+        "mergePattern": "^Merge (.*)$",
+        "mergeCorrespondence": ["source"]
+      },
+      "filterOptions": {
+        "merges": false
+      },
+      "releaseRules": [
+        { "breaking": true, "release": "major" },
+        { "type": "feat", "release": "minor" },
+        { "type": "fix", "release": "patch" },
+        { "type": "perf", "release": "patch" }
+      ]
+    }],
+    ["@semantic-release/release-notes-generator", {
+      "preset": "conventionalcommits",
+      "parserOpts": {
+        "noteKeywords": ["BREAKING CHANGE", "BREAKING-CHANGE"],
+        "mergePattern": "^Merge (.*)$",
+        "mergeCorrespondence": ["source"]
+      },
+      "writerOpts": {
+        "merges": false
+      }
+    }],
+    "@semantic-release/changelog",
+    ["@semantic-release/npm", { "npmPublish": false }],
+    ["@semantic-release/git", {
+      "assets": ["CHANGELOG.md", "package.json"],
+      "message": "chore(release): ${nextRelease.version}"
+    }],
+    "@semantic-release/gitlab"
+  ]
+}
